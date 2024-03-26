@@ -1,0 +1,61 @@
+
+/*Home page*/
+
+body{
+    background: #0E0D0D;
+    position: relative;
+}
+
+#homeSection{
+    width:100vw;
+    height: 100vh;
+}
+
+img {
+    width:350px;
+    height:fit-content;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:20px;
+
+    /*border-radius: 20px;
+    border: 10px solid #15F770;*/
+}
+
+#homeSection>.icons{
+    width:10px;
+    height:10px;
+}
+
+#homeSection>h1{
+    font-size:80px;
+    color: white;
+}
+
+#homeSection>h1::first-letter{
+    color:#15F770 ;
+}
+
+#homeSection>p{
+    color: white;
+    font-size:40px;
+}
+
+#homeSection>button{
+    background:#15F770 ;
+    color: white;
+    width:100px;
+    height:60px;
+    border-radius: 20px;
+}
+
+#homeSection>nav>a{
+    color: white;
+    font-size:20px;
+}
+
+#homeSection>nav>a:hover{
+    color: #15F770;
+
+}
