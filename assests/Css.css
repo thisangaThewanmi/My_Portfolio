@@ -1,17 +1,17 @@
 
 /*Home page*/
 
-body{
+.bodyPage1{
     background: #0E0D0D;
     position: relative;
 }
 
 #homeSection{
     width:100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
-img {
+#myImage {
     width:350px;
     height:fit-content;
     position:absolute;
@@ -58,4 +58,56 @@ img {
 #homeSection>nav>a:hover{
     color: #15F770;
 
+}
+
+
+/*----------------------Css for page 2----------------------------*/
+
+header{
+    height:100px;
+    width:99vw;
+    overflow: hidden;
+    background: #0E0D0D;
+    position:fixed;
+    position: relative;
+}
+
+header>nav{
+    top:47px;
+    bottom:0;
+    margin:auto;
+    right:43px;
+    position: absolute;
+
+}
+
+
+#bodyPage2{
+    background: rgba(27, 27, 27, 0.87);
+}
+
+#AboutMeSec{
+    width:99vw;
+    height:600px;
+    background: #0E0D0D;
+    margin-top:37px;
+}
+
+
+
+footer{
+    width:90vw;
+    height:150px;
+    background: #0E0D0D;
+    text-align: center;
+}
+
+#myImage2 {
+    width: 250px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-radius: 20px;
 }
