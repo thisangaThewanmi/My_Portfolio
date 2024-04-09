@@ -1,64 +1,7 @@
 
 /*Home page*/
 
-.bodyPage1{
-    background: #0E0D0D;
-    position: relative;
-}
 
-#homeSection{
-    width:100vw;
-    height: 90vh;
-}
-
-#myImage {
-    width:350px;
-    height:fit-content;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:20px;
-
-    /*border-radius: 20px;
-    border: 10px solid #15F770;*/
-}
-
-#homeSection>.icons{
-    width:10px;
-    height:10px;
-}
-
-#homeSection>h1{
-    font-size:80px;
-    color: white;
-}
-
-#homeSection>h1::first-letter{
-    color:#15F770 ;
-}
-
-#homeSection>p{
-    color: white;
-    font-size:40px;
-}
-
-#homeSection>button{
-    background:#15F770 ;
-    color: white;
-    width:100px;
-    height:60px;
-    border-radius: 20px;
-}
-
-#homeSection>nav>a{
-    color: white;
-    font-size:20px;
-}
-
-#homeSection>nav>a:hover{
-    color: #15F770;
-
-}
 
 
 /*----------------------Css for page 2----------------------------*/
@@ -71,8 +14,10 @@ header{
     position:fixed;
     left: 10px;
     right: 10px;
-    top:16px;
-
+    top:0;
+    background: rgba(12, 12, 12, 0.79);
+    z-index: 10;
+    backdrop-filter: blur(8px);
 }
 
 header>nav{
@@ -81,13 +26,16 @@ header>nav{
     margin:auto;
     right:43px;
     position: absolute;
+   /* color: white;
+    padding:10px;
+    display:inline-block;*/
 }
 
 /*Addig the background to the body*/
 
 #bodyPage2{
     background: #1E1E1E;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 
@@ -95,17 +43,113 @@ header>nav{
 
 #AboutMeSec{
     width:97vw;
-    height:600px;
+    height:800px;
     background: #0E0D0D;
     margin-top:25px;
     margin-left: 10px;
     margin-right: 10px;
+    position: relative;
+}
+
+/*Topics*/
+.topic{
+    color: white;
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size:18px;
+}
+
+
+#AboutMeSec>.topic>h2{
+    top:50px;
+}
+
+hr.line {
+    border: 4px solid #15F770;
+    width:170px;
+    position:absolute;
+    top:27px;
+    left:100px;
+}
+
+/*About me Image*/
+#myImageABM{
+    position:absolute;
+    top:210px;
+    bottom:50px;
+    left:67px;
+    width:290px;
+    height: fit-content;
+    border: 5px solid #15F770;
+    border-radius: 180px;
+}
+
+#AboutMeSec>div>button{
+    background: #15F770;
+    border-radius: 20px;
+    height:45px;
+    width:150px;
+    position: absolute;
+    bottom:100px;
+    left:125px;
+
+}
+
+#AboutMeSec>#AboutMeText{
+    font-family: "Arial";
+    width:850px;
+    color: white;
+    height:600px;
+    position:absolute;
+    right:40px;
+    top:150px;
+}
+
+#AboutMeText>h4{
+    font-size: 40px;
+    color:#15F770;
+}
+
+#AboutMeText>p{
+    font-size: 20px;
+    color: white;
+}
+
+#AboutMeText>p>ul{
+    font-size: 23px;
+    color: white;
+}
+
+
+#AboutMeText>#listLeft{
+    width:350px;
+    height:250px;
+    color: #15F770;
+    top:20px;
+
+}
+
+#AboutMeText>#listRight{
+    color: #15F770;
+    width:350px;
+    height:250px;
+    position: absolute;
+    right:20px;
+    bottom:115px;
+}
+
+#listLeft>ul>li{
+    margin-top: 45px;
+}
+
+#listRight>ul>li{
+    margin-top: 45px;
 }
 
 
 
-
-/*footer section*/
+      /*footer section*/
 footer{
     width:90vw;
     height:150px;
@@ -113,12 +157,74 @@ footer{
     text-align: center;
 }
 
-#myImage2 {
-    width: 250px;
-    height: fit-content;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    border-radius: 20px;
+
+
+
+
+/*Media Queryyy*/
+
+@media screen and (max-width: 1240px) {
+    #myImageABM {
+        left: 31px;
+        width: 252px;
+    }
+
+    #AboutMeSec > div > button {
+
+        bottom: 148px;
+        left: 84px;
+    }
+
+    #AboutMeSec > #AboutMeText {
+        font-size: 17px;
+        right: 8px;
+        width: 779px;
+    }
+
+    #AboutMeSec > #AboutMeText > p {
+        font-size: 16px;
+
+
+    }
+
+    #listRight > ul > li {
+        bottom: 130px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        #AboutMeSec{
+            height:1200px;
+        }
+        #myImageABM {
+            left: 31px;
+            width: 252px;
+        }
+
+        #AboutMeSec > div > button {
+
+            bottom: 148px;
+            left: 84px;
+        }
+
+        #AboutMeSec > #AboutMeText {
+            font-size: 15px;
+            right: 8px;
+            width: 664px;
+        }
+
+        #AboutMeSec > #AboutMeText > p {
+            font-size: 16px;
+
+
+        }
+
+        #listRight > ul > li {
+            bottom: 130px;
+        }
+
+
+    }
 }
+
