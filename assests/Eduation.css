@@ -1,0 +1,226 @@
+/*Education Sector*/
+
+#Education{
+    width:97vw;
+    height:1800px;
+    background: #e0dada;
+    margin-top:60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+#Education>hr {
+    border: 4px solid #15F770;
+    width:150px;
+    position:absolute;
+    top:27px;
+    left:100px;
+}
+
+#Education>#EduTexts>#middleLine{
+    color:white;
+    height:1000px;
+    border: 1px solid white;
+    width:2px;
+    background: white;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    top:120px;
+}
+
+#Education>#EduTexts{
+    width:90vw;
+    height:1600px;
+    background: #1f1e1e;
+    position:absolute;
+    top:60px;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+}
+
+
+
+/*primary section*/
+
+#EduTexts>#primary>h4{
+    color: #464242;
+    font-size: 75px;
+    position: absolute;
+    right: 490px;
+    top: 100px;
+}
+
+#primary>#primaryText{
+    width: 450px;
+    height: 300px;
+    background: #3432326e;
+    position: absolute;
+    right: 72px;
+    top: 85px;
+}
+
+#primaryText>h5{
+    color: #15F770;
+    font-size: 23px;
+    position: absolute;
+    right: 144px;
+    top: -11px;
+}
+
+#priImage{
+    width: 300px;
+    height: fit-content;
+    right:95px;
+    position: absolute;
+    top: 85px;
+}
+
+
+#primaryText>p{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 86px;
+
+}
+
+
+/*secondary section*/
+
+#EduTexts>#secondary>h4{
+    color: #464242;
+    font-size: 75px;
+    position: absolute;
+    /* right: 618px; */
+    top: 310px;
+    left: 510px;
+}
+
+#secondary>#secondaryText{
+    width: 450px;
+    height: 300px;
+    background: #3432326e;
+    position: absolute;
+    top: 281px;
+    left: 99px
+}
+
+#secondaryText>h5{
+    color: #15F770;
+    font-size: 23px;
+    position: absolute;
+    right: 144px;
+    top: -11px;
+}
+
+#secImage{
+    width: 300px;
+    height: fit-content;
+    right:95px;
+    position: absolute;
+    top: 85px;
+}
+
+
+#secondaryText>p{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 86px;
+
+}
+
+/*ol section*/
+#EduTexts>#ol>h4{
+    color: #464242;
+    font-size: 75px;
+    position: absolute;
+    right: 481px;
+    top: 504px;
+}
+
+#ol>#olText{
+    width: 450px;
+    height: 300px;
+    background: #3432326e;
+    position: absolute;
+    right: 72px;
+    top: 531px;
+}
+
+#olText>h5{
+    color: #15F770;
+    font-size: 23px;
+    position: absolute;
+    right: 144px;
+    top: -11px;
+}
+
+#olImg{
+    width: 228px;
+    height: fit-content;
+    right: 115px;
+    position: absolute;
+    top: 47px;
+}
+
+
+#olText>p{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 86px;
+
+}
+
+/*A/L SECTION*/
+#EduTexts>#al>h4{
+    color: #464242;
+    font-size: 75px;
+    position: absolute;
+    left: 510px;
+   top:776px;
+}
+
+#al>#alText{
+    width: 450px;
+    height: 300px;
+    background: #3432326e;
+    position: absolute;
+    top: 771px;
+    left: 95px;
+}
+
+#alText>h5{
+    color: #15F770;
+    font-size: 23px;
+    position: absolute;
+    right: 144px;
+    top: -11px;
+}
+
+#alImg{
+    width: 228px;
+    height: fit-content;
+    right: 115px;
+    position: absolute;
+    top: 47px;
+}
+
+
+#alText>p{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 59px;
+
+}
