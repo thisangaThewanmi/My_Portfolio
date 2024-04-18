@@ -194,13 +194,15 @@ footer{
     #listRight > ul > li {
         bottom: 130px;
     }
+}
 
 
     @media screen and (max-width: 768px) {
 
-        #AboutMeSec{
-            height:1200px;
+        #AboutMeSec {
+            height: 1200px;
         }
+
         #myImageABM {
             left: 31px;
             width: 252px;
@@ -230,5 +232,83 @@ footer{
 
 
     }
-}
+
+
+    @media screen and (max-width: 425px) {
+
+        header {
+            height: 86px;
+            left: 0;
+            right: 0;
+        }
+
+        header > nav {
+            top: 30px;
+            right: 33px;
+
+        }
+
+        #AboutMeSec {
+            height: 1300px;
+            width: 91vw;
+            left: 10px;
+        }
+
+        .topic {
+            font-size: 16px;
+        }
+
+
+        hr.line {
+            top: 23px;
+            left: 64px;
+        }
+
+
+        #myImageABM {
+            top: 165px;
+            left: 40px;
+        }
+
+        #AboutMeSec > div > button {
+
+            bottom: 681px;
+            left: 71px;
+            width: 170px;
+            height: 46px;
+
+        }
+
+        #AboutMeSec > #AboutMeText {
+            font-size: 15px;
+            right: 19px;
+            width: 350px;
+            top: 604px;
+            height: 890px;
+        }
+
+        #AboutMeText > h4 {
+            font-size: 35px;
+        }
+
+        #AboutMeSec > #AboutMeText > p {
+            font-size: 15px;
+        }
+
+
+        #AboutMeText > #listRight {
+            color: #15F770;
+            width: 350px;
+            height: 323px;
+            position: absolute;
+            right: 0px;
+            bottom: 115px;
+
+        }
+
+    }
+
+
+
+
 
