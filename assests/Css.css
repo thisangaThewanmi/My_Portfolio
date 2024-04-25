@@ -15,9 +15,9 @@ header{
     left: 10px;
     right: 10px;
     top:0;
-    background: rgba(12, 12, 12, 0.79);
+    background: rgba(12, 12, 12, 0.62);
     z-index: 10;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(0px);
 }
 
 header>nav{
@@ -44,7 +44,7 @@ header>nav{
 #AboutMeSec{
     width:97vw;
     height:800px;
-    background: #0E0D0D;
+    background: rgba(0, 0, 0, 0.51);
     top:25px;
     left: 10px;
    right: 10px;
@@ -83,6 +83,7 @@ hr.line {
     height: fit-content;
     border: 5px solid #15F770;
     border-radius: 180px;
+    display:flex;
 }
 
 #AboutMeSec>div>button{
@@ -94,6 +95,7 @@ hr.line {
     bottom:100px;
     left:125px;
 
+
 }
 
 #AboutMeSec>#AboutMeText{
@@ -104,21 +106,30 @@ hr.line {
     position:absolute;
     right:40px;
     top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+
 }
 
 #AboutMeText>h4{
     font-size: 40px;
     color:#15F770;
+
+
 }
 
 #AboutMeText>p{
     font-size: 20px;
     color: white;
+
 }
 
 #AboutMeText>p>ul{
     font-size: 23px;
     color: white;
+
 }
 
 
@@ -126,7 +137,8 @@ hr.line {
     width:350px;
     height:250px;
     color: #15F770;
-    top:20px;
+
+
 
 }
 
@@ -136,7 +148,8 @@ hr.line {
     height:250px;
     position: absolute;
     right:20px;
-    bottom:115px;
+    bottom:32px;
+
 }
 
 #listLeft>ul>li{
@@ -159,6 +172,7 @@ footer{
     left:2px;
     right:10px;
 
+
 }
 
 
@@ -167,74 +181,116 @@ footer{
 
 /*Media Queryyy*/
 
+@media screen and (max-width: 1300px) {
+    #myImageABM{
+        left:40px;
+        width:280px;
+
+    }
+
+    #AboutMeSec>#AboutMeText{
+        width:780px;
+    }
+
+    #AboutMeText>#listRight{
+        bottom: 6px;
+    }
+}
+
 @media screen and (max-width: 1240px) {
     #myImageABM {
         left: 31px;
         width: 252px;
     }
 
-    #AboutMeSec > div > button {
+    #AboutMeSec>div>button {
 
         bottom: 148px;
         left: 84px;
     }
 
-    #AboutMeSec > #AboutMeText {
+    /*#AboutMeSec>#AboutMeText {
         font-size: 17px;
-        right: 8px;
+        right: 15px;
         width: 779px;
-    }
+    }*/
 
-    #AboutMeSec > #AboutMeText > p {
+    #AboutMeSec>#AboutMeText > p {
         font-size: 16px;
-
-
     }
 
-    #listRight > ul > li {
-        bottom: 130px;
+    #AboutMeText>#listRight{
+        bottom: 53px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #AboutMeSec>#AboutMeText{
+        width:680px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #myImageABM {
+        left: 33px;
+        width: 199px;
+    }
+
+    #AboutMeSec>div>button {
+        bottom: 216px;
+        left: 58px;
     }
 }
 
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px){
+
+    #AboutMeText>#listRight {
+        bottom: 42px;
+        right: -75px;
+    }
+
+    #AboutMeSec>#AboutMeText {
+        width: 555px;
+    }
+}
+
+
+
+
+
+    @media screen and (max-width: 880px) {
 
         #AboutMeSec {
             height: 1200px;
         }
 
-        #myImageABM {
-            left: 31px;
-            width: 252px;
-        }
-
-        #AboutMeSec > div > button {
-
-            bottom: 148px;
-            left: 84px;
-        }
-
         #AboutMeSec > #AboutMeText {
-            font-size: 15px;
-            right: 8px;
-            width: 664px;
+            width: 540px;
         }
-
-        #AboutMeSec > #AboutMeText > p {
-            font-size: 16px;
-
-
-        }
-
-        #listRight > ul > li {
-            bottom: 130px;
-        }
-
 
     }
 
 
-    @media screen and (max-width: 425px) {
+@media screen and (max-width: 850px) {
+    #AboutMeSec > #AboutMeText {
+        width: 453px;
+    }
+
+    #AboutMeText>#listRight {
+        bottom: -142px;
+        right: 188px;
+    }
+}
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 520px) {
 
         header {
             height: 86px;
@@ -307,6 +363,8 @@ footer{
         }
 
     }
+
+
 
 
 

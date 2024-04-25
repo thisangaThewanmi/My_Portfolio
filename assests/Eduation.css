@@ -270,6 +270,18 @@
 
 }
 
+@media screen and (max-width: 425px) {
+    #Education{
+        width:97vw;
+        height:1400px;
+        background: #0E0D0D;
+        top:80px;
+        left: 10px;
+        right: 10px;
+        position: relative;
+    }
+}
+
 
 
 
