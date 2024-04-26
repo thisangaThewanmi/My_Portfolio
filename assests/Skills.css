@@ -1,6 +1,6 @@
 #SKILLS{
     width:97vw;
-    height: 1000px;
+    height: 5000px;
     background: #0E0D0D;
     position: relative;
     top: 135px;
@@ -59,20 +59,39 @@ progress ::-webkit-progress-value {
     background: #0E0D0D;
     position: absolute;
     top: 950px;
+    color: white;
 }
 
 #mySevices>h2{
     font-size: 65px;
     justify-content: center;
     display: flex;
-    color:white;
+
+}
+
+.serviceCard{
+    width: 365px;
+    height: 471px;
+    position: absolute;
+    color: white;
+    background:#0d0c0c;
+    box-shadow: rgb(9, 239, 106) 0px 19px 38px, rgb(69, 143, 99);
+  /*  left: 253px;
+    top: 210px;*/
+}
+
+.serviceCard:hover{
+    color: white;
+    background: #4aa971;
 }
 
 #webDevelopment{
-    width: 365px;
-    height: 471px;
-    background: white;
-    position: absolute;
     left: 253px;
     top: 210px;
 }
+
+#frontEnd{
+    right:370px;
+    top:210px;
+}
+
