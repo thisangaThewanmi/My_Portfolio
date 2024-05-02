@@ -7,77 +7,110 @@
 /*----------------------Css for page 2----------------------------*/
 
 
-header{
-    height:100px;
-    width:97vw;
-    overflow: hidden;
-    background: #0E0D0D;
-    position:fixed;
-    left: 10px;
-    right: 10px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", "sans-serif";
+}
+
+:root{
+    --bg-color: #181616;
+    --second-bg-color: rgb(8 8 8);
+    --text-color: white;
+    --main-colour: #15F770;
+}
+
+html{
+    font-size:60%;
+    overflow-x:hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
     top:0;
-    background: rgba(12, 12, 12, 0.62);
-    z-index: 10;
-    backdrop-filter: blur(0px);
+    left:0;
+    width:100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0,0,0,0.82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
 }
 
-header>nav{
-    top:47px;
-    bottom:0;
-    margin:auto;
-    right:43px;
-    position: absolute;
-   /* color: white;
-    padding:10px;
-    display:inline-block;*/
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor:pointer;
+    transition:0.3s ease;
 }
 
-/*Addig the background to the body*/
-
-#bodyPage2{
-    background: #1E1E1E;
-    padding-top: 100px;
+.logo:hover{
+    transform:scale(1.1);
 }
 
+.logo{
+    text-shadow: 0 0 25px var(--main-colour);
+}
 
-/*About me section*/
+.navbar>a{
+    font-size:1.8rem;
+    color: var(--text-color);
+    margin-left:4rem;
+    font-weight:500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent ;
+}
+
+.navbar>a:hover,
+.navbar>a.active{
+    color: var(--main-colour);
+    border-bottom: 3px solid var(--main-colour);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color:var(--main-colour);
+    display: none;
+}
 
 #AboutMeSec{
-    width:97vw;
-    height:800px;
-    background: rgba(0, 0, 0, 0.51);
-    top:25px;
-    left: 10px;
-   right: 10px;
-    position: relative;
+    display: flex;
+    width:96vw;
+    height:140vh;
+    background: var(--second-bg-color);
+    position:relative;
+    top:142px;
+    left:23px;
 }
 
-/*Topics*/
 .topic{
     color: white;
-    position:absolute;
-    top:10px;
-    left:10px;
-    font-size:18px;
-}
-
-
-#AboutMeSec>.topic>h2{
-    top:50px;
+    left: 10px;
+    font-size: 18px;
+    padding: 40px;
 }
 
 hr.line {
     border: 4px solid #15F770;
     width:170px;
-    position:absolute;
-    top:27px;
-    left:100px;
+    /* position:absolute;
+     top:27px;
+     left:100px;*/
 }
 
-/*About me Image*/
 #myImageABM{
     position:absolute;
-    top:210px;
+    top:240px;
     bottom:50px;
     left:67px;
     width:290px;
@@ -85,104 +118,50 @@ hr.line {
     border: 5px solid #15F770;
     border-radius: 180px;
     display:flex;
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    box-shadow:  rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
 }
 
-#AboutMeSec>div>button{
-    background: #15F770;
-    border-radius: 20px;
-    height:45px;
-    width:150px;
-    position: absolute;
-    bottom:100px;
-    left:125px;
-
+#left{
+    width:600px;
+    height: 100vh;
 
 }
 
-#AboutMeSec>#AboutMeText{
-    font-family: "Arial";
-    width:850px;
-    color: white;
-    height:600px;
-    position:absolute;
-    right:40px;
-    top:150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
+#right{
+    width:1200px;
+    height: 100vh;
+
+}
 
 
+#AboutMeText{
+    font-family: "Poppins";
+    color: var(--text-color);
+    margin-top:200px;
+    padding:80px;
+    font-size: 21px;
+
+}
+
+
+#AboutMeText>p{
+    color: var(--text-color);
 }
 
 #AboutMeText>h4{
     font-size: 40px;
-    color:#15F770;
-
-
-}
-
-#AboutMeText>p{
-    font-size: 20px;
-    color: white;
-
-}
-
-#AboutMeText>p>ul{
-    font-size: 23px;
-    color: white;
-
-}
-
-
-#AboutMeText>#listLeft{
-    width:350px;
-    height:250px;
-    color: #15F770;
-
-
-
-}
-
-#AboutMeText>#listRight{
-    color: #15F770;
-    width:350px;
-    height:250px;
-    position: absolute;
-    right:20px;
-    bottom:32px;
-
-}
-
-#listLeft>ul>li{
-    margin-top: 45px;
-}
-
-#listRight>ul>li{
-    margin-top: 45px;
+    color:var(--main-colour);
+    margin-bottom: 30px;
 }
 
 
 
-      /*footer section*/
-footer{
-    width:99vw;
-    height:60px;
-    background: #0E0D0D;
-    text-align: center;
-    position: relative;
-    bottom:0;
-    left:2px;
-    right:10px;
-
-
-}
+/*
 
 
 
+!*Media Queryyy*!
 
-
-/*Media Queryyy*/
 
 @media screen and (max-width: 1300px) {
     #myImageABM{
@@ -212,11 +191,11 @@ footer{
         left: 84px;
     }
 
-    /*#AboutMeSec>#AboutMeText {
+    !*#AboutMeSec>#AboutMeText {
         font-size: 17px;
         right: 15px;
         width: 779px;
-    }*/
+    }*!
 
     #AboutMeSec>#AboutMeText > p {
         font-size: 16px;
@@ -368,6 +347,8 @@ footer{
     }
 
 
+
+*/
 
 
 

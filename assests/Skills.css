@@ -147,10 +147,9 @@ progress ::-webkit-progress-value {
 
             0px 12px 13px rgba(21, 247, 112, 0.17),      !* #15F770 shadow *!
             0px -3px 5px rgba(21, 247, 112, 0.09);       !* #15F770 shadow *!*/
+    box-shadow: rgba(21, 247, 112, 0.25) 0px -8px 32px,
+                rgba(191, 255, 186, 0.22) 0px 10px 15px;
 
-    box-shadow:
-            rgba(21, 247, 112, 0.25) 0px 14px 28px,   /* Mixed with green */
-            rgba(191, 255, 186, 0.22) 0px 10px 10px;  /* Mixed with white */
 
     border-radius:20px;
     color: white;
