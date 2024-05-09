@@ -1,12 +1,15 @@
 #SKILLS{
-    width:97vw;
-    height: 100vh;
+    width: 95vw;
+    height: 130vh;
     background: #0E0D0D;
     position: relative;
-    top: 135px;
-    left: 11px;
-
+    margin-left: 31px;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 #skillTopic>hr {
     border: 4px solid #15F770;
@@ -16,6 +19,121 @@
     left:100px;
 }
 
+#skillImages{
+    width: 88vw;
+    height: 48vh;
+   /* background: deeppink;*/
+    margin-left: 62px;
+    display: flex;
+    margin-top: 100px;
+
+}
+
+#jsImg{
+    width: 167px;
+    height: 132px;
+    background: black;
+    margin-top: 88px;
+    border-radius: 20px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+#javaScript{
+    width: 166px;
+    height: 133px;
+}
+
+
+#hibernateImg{
+    width: 175px;
+    height: 199px;
+    background: green;
+    margin-top: 55px;
+    border-radius: 20px;
+    margin-right: 12px;
+   overflow: hidden;
+}
+
+#hibernate{
+    width: 175px;
+    height: 199px;
+}
+
+
+/*===========================================================*/
+
+/* Common styles for all progress bars */
+progress {
+    width: 100%;
+    height: 10px;
+    border: 2px #46424275;
+
+    margin-bottom: 40px;
+    border-radius:20px;
+}
+
+/* Styles for progress bars inside #skillText */
+#skillText progress {
+    background-color: rgba(19, 18, 18, 0.58); /* Light gray background */
+}
+
+/* Styles for progress bars inside #skillTextRight */
+#skillTextRight progress {
+    background-color: rgba(19, 18, 18, 0.58);/* Light gray background */
+}
+
+/* Keyframes for progress bar animation */
+@keyframes progressAnimation {
+    from { width: 0; }
+}
+
+/* Apply animation to progress bars */
+progress[value] {
+    animation: progressAnimation 2s ease-out forwards;
+}
+
+/* Additional styles for progress bars */
+progress::-webkit-progress-value {
+    background-color: #15F770; /* Green progress bar */
+}
+progress::-moz-progress-bar {
+    background-color: #15F770; /* Green progress bar */
+    border-radius: 20px;
+}
+
+#skillText>h5{
+    font-size: 18px;
+}
+
+
+#skillTextRight>h5{
+    font-size: 18px;
+}
+
+#progressBars {
+    width: 55vw;
+    height: 40vh;
+   background: #46424275;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    margin-left: 314px;
+    margin-top: 30px;
+    border-radius: 20px;
+
+
+}
+
+/* Styles for each grid item (div) */
+#skillText,
+#skillTextRight {
+   /* background: white; !* White background for better visibility *!*/
+    padding: 20px; /* Add padding for spacing */
+}
 
 
 

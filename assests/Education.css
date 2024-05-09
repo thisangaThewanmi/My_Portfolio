@@ -41,6 +41,8 @@
     width:20vw;
     height:130vh;
     margin-right:22px;
+    border: 2px solid #464242;
+    border-radius: 20px 0px 20px 0px;
 
 }
 
@@ -54,6 +56,7 @@
 #primary{
 
    /* background: #ff002f;*/
+
 
 }
 
@@ -117,12 +120,15 @@
     background: black;
 }*/
 .EduImage{
-    width: 200px;
-    height: 200px;
-    background: black;
+    width: 154px;
+    height: 152px;
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 200px;
-    margin-left:30px;
+    margin-left: 30px;
+   /* border: 2px solid #15F770;*/
+    /*
     box-shadow:  rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    */
 }
 
 /*.EduImage>img{/// parana eka
@@ -133,11 +139,13 @@
 }*/
 
 .EduImage>img {
-    width: 428px;
-    height: 149px;
-    margin-left: -112px;
-    margin-top: 30px;
+    width: 337px;
+    height: 106px;
+    margin-left: -90px;
+    margin-top: 29px;
+
 }
+
 
 .EduImage>#ijseImg{
     width: 200px;
@@ -155,7 +163,7 @@
 }
 
 .info>h5{
-    font-size: 33px;
+    font-size: 28px;
     color: var(--main-colour);
     margin-top: 100px;
 }
