@@ -1,10 +1,10 @@
 #SKILLS{
     width: 95vw;
-    height: 130vh;
+    height: 100vh;
     background:var(--second-bg-color);
     position: relative;
     margin-left: 31px;
-    margin-top: 24px;
+    margin-top: 127px;
     justify-content: center;
     align-items: center;
 }

@@ -12,6 +12,8 @@
     <link rel ="stylesheet" href="assests/Skills.css">
     <link rel ="stylesheet" href="assests/Services.css">
     <link rel ="stylesheet" href="assests/Assignment.css">
+    <link rel ="stylesheet" href="assests/MyWork.css">
+    <link rel ="stylesheet" href="assests/Contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
@@ -208,7 +210,7 @@
 
         </div>
 
-        <div id="skillImages">
+      <!--  <div id="skillImages">
 
             <div id="jsImg">
                 <img  id="javaScript" src="assests/images/JS.png">
@@ -217,23 +219,23 @@
                 <img id="hibernate" class="imageSkill" src="assests/images/HIBERNATE.png">
             </div>
             <div id="cssImg">
-               <!-- <img class="imageSkill" src="assests/images/CSS.png">-->
+               &lt;!&ndash; <img class="imageSkill" src="assests/images/CSS.png">&ndash;&gt;
             </div>
             <div id="IntelliJImg">
-                <!--<img class="imageSkill" src="assests/images/INTELLIJ.jpeg">-->
+                &lt;!&ndash;<img class="imageSkill" src="assests/images/INTELLIJ.jpeg">&ndash;&gt;
             </div>
             <div id="htmlImg">
-               <!-- <img class="imageSkill" src="assests/images/HTML.png">-->
+               &lt;!&ndash; <img class="imageSkill" src="assests/images/HTML.png">&ndash;&gt;
             </div>
             <div id="javaImg">
-                <!--<img class="imageSkill" src="assests/images/JAVA.png">-->
+                &lt;!&ndash;<img class="imageSkill" src="assests/images/JAVA.png">&ndash;&gt;
             </div>
             <div id="figmaImg">
-                <!--<img class="imageSkill" src="assests/images/figma.png">-->
+                &lt;!&ndash;<img class="imageSkill" src="assests/images/figma.png">&ndash;&gt;
             </div>
 
         </div>
-
+-->
 
 <div id="progressBars">
         <div id="skillText">
@@ -300,6 +302,31 @@
 
 </section>
 
+<section id="myWork">
+
+    <h3> My works</h3>
+    <div id="gridContainer">
+        <div id="proPic" class="gridItem">
+            <img id="proImg" src="assests/images/Assignment.jpg">
+        </div>
+        <div  id="ProText"class="gridItem">
+            My Current Projects <br>
+
+
+        </div>
+
+        <div id="AssText" class="gridItem">
+            <h3> My Current </h3>  <br>
+            <h3> Projects </h3>
+
+        </div>
+
+        <div  id="AssImg" class="gridItem">
+            <img id="AssignmentImg" src="assests/images/Assignment.jpg">
+        </div>
+    </div>
+</section>
+
 
   <!--  &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Project Section&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
 
@@ -359,9 +386,7 @@
 
 
 
-  <!-- &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Conatct Me Section&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
-
-    <section id="contactMe">
+   <!-- <section id="contactMe">
 
         <div id="AssTopic">
             <h4>Conatact Me</h4>
@@ -393,13 +418,64 @@
             <button type="submit"> Submit </button><br>
         </div>
 
-    </section>
+    </section>-->
+
+
+<!----------------Contact Section-------------->
+<section id="contactMe">
+
+    <h4>Conatact Me</h4>
+    <div id="Contopic">
+
+
+        <div id="dataSec">
+            <h3>Feel free to get in touch with me.
+                I am always open to discussing new projects,               creative ideas or opportunities to be part of your
+                vision.</h3>
+
+            <!-- <img src="assests/images/github%20(1).png" alt="user"  title="name">
+             <h3>B.V.Thisanga Thewanmi Kavindya</h3>
+
+                 <h3><img src="assests/images/github%20(1).png" alt="user" title="name">B.V.Thisanga Thewanmi Kavindya</h3>
+
+
+                 <img src="assests/images/github%20(1).png" alt="email"  title="email">
+             <h3>thisangat2005@gmail.com</h3>
+
+             <img src="assests/images/github%20(1).png"  alt="phone"  title="phone">
+             <h3>0789980556</h3>
+
+             <img src="assests/images/github%20(1).png"  alt="loacation"  title="location">
+             <h3>444E/1,Kahatagaha watta,Kuda Arukkgoda,Allubomulla</h3>
+     -->
+
+            <h3><img src="assests/images/user.png" alt="user"  title="name">B.V.Thisanga Thewanmi Kavindya</h3>
+            <h3><img src="assests/images/email.png" alt="email"  title="email">thisangat2005@gmail.com</h3>
+            <h3><img src="assests/images/phone-call.png" alt="phone" title="phone">0789980556</h3>
+            <h3><img src="assests/images/location.png" alt="location" title="location">444E/1,Kahatagaha watta,Kuda Arukkgoda,Allubomulla</h3>
+        </div>
+
+
+        <div id="ContacttextFeilds">
+            <input class="textBox" id="name" type="text" placeholder="Enter your Name"><br>
+
+            <input class="textBox" id="email" type="email" placeholder="Enter your Email" required><br>
+
+            <input class="textBox" id="subject" type="text" placeholder="Subject"><br>
+
+            <textarea id="message" placeholder="Message"  rows="10" cols="80" required></textarea><br>
+
+            <button type="submit"> Submit </button><br>
+        </div>
+    </div>
+
+</section>
 
 </main>
 
 <footer>
   all Copyrights reserved by Thisanga Thewanmi | Developed by : Thisanga Thewanmi
-</footer>-->
+</footer>
 
 
 

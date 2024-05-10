@@ -1,0 +1,74 @@
+#contactMe{
+    width: 96vw;
+    height: 100vh;
+    background: var(--second-bg-color);
+    /* margin: 0; */
+    margin-top: 59px;
+    left: 20px;
+    margin-left: 22px;
+}
+
+#Contopic{
+    display: flex;
+    flex-direction:row;
+    width:94vw;
+    height: 100vh;
+    margin-top: 30px;
+}
+#contactMe>h4{
+    color: #15F770;
+    font-size: 60px;
+    /*padding: 50px;*/
+    margin: 0;
+}
+
+#Contopic>#dataSec{
+   /* background: rgba(12, 12, 12, 0.79);*/
+    width: 586px;
+    height: 556px;
+    /* margin-top: 30px; */
+    /* padding: 50px; */
+    margin-left: 94px;
+    color: white;
+}
+
+
+#Contopic>#ContacttextFeilds{
+    /*background: rgba(12, 12, 12, 0.79);*/
+    width: 500px;
+    height: 455px;
+   /* border: 2px solid black;*/
+    padding: 50px;
+}
+
+img{
+    width:30px;
+    height:fit-content;
+}
+
+.textBox{
+    width: 322px;
+    height: 38px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    color: rgba(30, 30, 30, 0.88);
+    text-align: center;
+}
+
+.textArea{
+    width: 425px;
+    height: 165px;
+    border-radius: 23px;
+    color: rgba(30, 30, 30, 0.88);
+    text-align: center;
+
+}
+
+#contactMe>#Contopic>#dataSec>h3{
+    margin-bottom:50px;
+}
+
+
+#contactMe>#Contopic>#dataSec>h3>img{
+    margin-right:30px;
+}
