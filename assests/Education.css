@@ -1,7 +1,7 @@
 #Education{
     width:95vw;
     height:210vh;
-    background:#0E0D0D;
+    background:var(--second-bg-color);
     margin-top:170px;
     left: 32px;
     right: 10px;
@@ -148,18 +148,18 @@
 
 
 .EduImage>#ijseImg{
-    width: 200px;
+    width: 143px;
     height: fit-content;
-    margin-left: -2px;
+    margin-left: 10px;
     margin-top: -5px;
     border-radius: 200px;
 }
 
 .EduImage>#olImg{
-    width: 296px;
-    height: 175px;
-    margin-left: -52px;
-    margin-top: -1px;
+    width: 241px;
+    height: 121px;
+    margin-left: -46px;
+    margin-top: 5px;
 }
 
 .info>h5{

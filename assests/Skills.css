@@ -1,7 +1,7 @@
 #SKILLS{
     width: 95vw;
     height: 130vh;
-    background: #0E0D0D;
+    background:var(--second-bg-color);
     position: relative;
     margin-left: 31px;
     margin-top: 24px;

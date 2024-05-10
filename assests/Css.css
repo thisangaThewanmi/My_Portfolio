@@ -18,7 +18,7 @@
 
 :root{
     --bg-color: #181616;
-    --second-bg-color: rgb(8 8 8);
+    --second-bg-color: rgb(8 8 8/ 0.89);
     --text-color: white;
     --main-colour: #15F770;
 }
@@ -31,6 +31,8 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    background-image: url("../assests/images/back2.jpeg");
+    /*background-repeat: no-repeat;*/
 }
 
 .header{
