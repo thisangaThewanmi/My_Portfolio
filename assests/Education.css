@@ -1,6 +1,6 @@
 #Education{
     width:95vw;
-    height:210vh;
+    height:165vh;
     background:var(--second-bg-color);
     margin-top:170px;
     left: 32px;
@@ -28,7 +28,7 @@
 .Text{
     /*background: #eb87fa;*/
     width:86vw;
-    height:150vh;
+    height:120vh;
     display:flex;
     margin-left: 60px;
     margin-top:180px;
@@ -39,7 +39,7 @@
 
 #leftText>div{
     width:20vw;
-    height:130vh;
+    height:100vh;
     margin-right:22px;
     border: 2px solid #464242;
     border-radius: 20px 0px 20px 0px;
@@ -48,8 +48,10 @@
 
 #rightText>div{
     width:20vw;
-    height:130vh;
+    height:100vh;
     margin-right:30px;
+    border: 2px solid #464242;
+    border-radius: 20px 0px 20px 0px;
 
 }
 
