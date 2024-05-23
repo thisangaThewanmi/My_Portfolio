@@ -197,7 +197,7 @@ height: 50px;
     width: 30vw;
     height: auto; /* Adjust height to fit content */
     padding: 20px; /* Add some padding */
-    background: purple;
+
 }
 
 #right{
@@ -464,7 +464,7 @@ footer{
         font-size: 15px;
         width:153px;
         height: 38px;
-        margin-left: 29px;
+        margin-left: 19px;
 
     }
 
