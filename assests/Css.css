@@ -125,6 +125,7 @@ body::before {
     top:84px;
     left:35px;
     bottom: 30px;
+    border:2px solid black;
 }
 
 .topic{
@@ -192,14 +193,16 @@ height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
-    width: 600px;
+    width: 30vw;
     height: auto; /* Adjust height to fit content */
     padding: 20px; /* Add some padding */
+    background: purple;
 }
 
 #right{
-    width:1200px;
+    width:80vw;
     height: 100vh;
+    flex-direction: row;
 
 }
 
@@ -210,6 +213,7 @@ height: 50px;
     margin-top:121px;
     padding:80px;
     font-size: 19px;
+
 
 }
 
@@ -269,202 +273,222 @@ footer{
 */
 
 
-/*
 
 
 
-!*Media Queryyy*!
 
 
-@media screen and (max-width: 1300px) {
-    #myImageABM{
-        left:40px;
-        width:280px;
 
+
+@media screen and (max-width: 1440px) {
+    #myImageABM {
+        width: 271px;
+        height: auto;
+        border: 5px solid #15F770;
+        border-radius: 234px;
+        display: block;
+        margin: 20px auto;
+        box-shadow: rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /*
+        box-shadow: rgb(66, 140, 101) 0px 14px 8px, rgb(9, 218, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 102px, rgba(12, 12, 12, 0.79) 0px -13px 0px, rgba(0, 0, 0, 0.09) 0px -15px 0px;
+        */
     }
 
-    #AboutMeSec>#AboutMeText{
-        width:780px;
+    .topic{
+        color: white;
+        left: 10px;
+        font-size: 15px;
+        padding: 43px;
     }
 
-    #AboutMeText>#listRight{
-        bottom: 6px;
+    #AboutMeText{
+        font-size: 17px;
+    }
+
+    .button-container>button{
+        width:160px;
+        height: 40px;
+    }
+    .button-container{
+        margin-top: 30px;
     }
 }
 
-@media screen and (max-width: 1240px) {
-    #myImageABM {
-        left: 31px;
-        width: 252px;
+@media screen and (max-width: 1240px){
+    #myImageABM{
+        width:225px;
     }
 
-    #AboutMeSec>div>button {
-
-        bottom: 148px;
-        left: 84px;
+    .topic{
+        padding:10px 10px 40px;
     }
 
-    !*#AboutMeSec>#AboutMeText {
-        font-size: 17px;
-        right: 15px;
-        width: 779px;
-    }*!
+    .button-container{
+        padding: 0px;
+    }
 
-    #AboutMeSec>#AboutMeText > p {
+    .button-container>button{
+        font-size: 15px;
+        margin-right: 20px;
+        width:142px;
+        height: 38px;
+    }
+
+    #AboutMeText{
+        padding: 0px 0px 0px 45px;
         font-size: 16px;
     }
 
-    #AboutMeText>#listRight{
-        bottom: 53px;
+    #listRight{
+        margin-left: 164px;
+    }
+
+    #AboutMeText>h4{
+        font-size: 34px;
     }
 }
 
-@media screen and (max-width: 1160px) {
-    #AboutMeSec>#AboutMeText{
-        width:680px;
+@media screen and (max-width: 1080px) {
+
+    #AboutMeSec {
+        height: 90vh;
     }
+
+    #myImageABM{
+        width:211px;
+    }
+
+    #listRight{
+        margin-left:100px;
+    }
+
+    .topic{
+        font-size: 11px;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .button-container{
+        margin-left: 0px;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .button-container>button{
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    body:before{
+        top:77px;
+    }
+
 }
 
-@media screen and (max-width: 1060px) {
-    #myImageABM {
-        left: 33px;
-        width: 199px;
+@media screen and (max-width: 864px){
+    #AboutMeSec{
+        flex-direction: column;
+        height: auto;
+        left:22px;
+        background: black;
     }
 
-    #AboutMeSec>div>button {
-        bottom: 216px;
-        left: 58px;
+    #AboutMeText{
+        margin-top:20px;
+        padding:55px;
+        font-size: 15px;
     }
+
+    #AboutMeText>h4{
+        margin-left:17%;
+        font-size: 41px;
+
+    }
+
+    #left{
+        width:100%;
+        height:auto;
+    }
+
+    #right{
+        width:100%;
+        height:auto;
+    }
+
+    .topic{
+        font-size: 26px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .button-container{
+        flex-direction: row;
+    }
+
+    .button-container>button{
+        font-size: 19px;
+        width:166px;
+        height: 51px;
+        margin-left: 20px;
+    }
+
+    #myImageABM{
+        width: 320px;
+    }
+
+    #list{
+        margin-left:40px;
+    }
+
+
 }
 
-
-@media screen and (max-width: 1000px){
-
-    #AboutMeText>#listRight {
-        bottom: 42px;
-        right: -75px;
+@media screen and (max-width: 500px){
+    .topic{
+        font-size: 16px;
+    }
+    #myImageABM{
+        width:236px;
     }
 
-    #AboutMeSec>#AboutMeText {
-        width: 555px;
+    .button-container>button{
+        font-size: 15px;
+        width:153px;
+        height: 38px;
+        margin-left: 29px;
+
+    }
+
+    #AboutMeText{
+        padding: 30px;
+        font-size: 13px;
+    }
+
+    #AboutMeText>h4{
+        font-size: 28px;
+        margin-left: 0px;
+    }
+
+    #lists{
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    #listRight{
+        margin-left:0px;
+
+    }
+    #AboutMeSec{
+        width: 90vw;
+        left:18px;
+    }
+    .header{
+        padding:0px 12% 2rem;
     }
 }
-
-
-
-
-
-    @media screen and (max-width: 880px) {
-
-        #AboutMeSec {
-            height: 1200px;
-        }
-
-        #AboutMeSec > #AboutMeText {
-            width: 540px;
-        }
-
-    }
-
-
-@media screen and (max-width: 850px) {
-    #AboutMeSec > #AboutMeText {
-        width: 453px;
-    }
-
-
-    #AboutMeText>#listRight {
-        bottom: -142px;
-        right: 188px;
-    }
-}
-
-
-
-
-
-
-
-
-    @media screen and (max-width: 520px) {
-
-        header {
-            height: 86px;
-            left: 0;
-            right: 0;
-        }
-
-        header > nav {
-            top: 30px;
-            right: 33px;
-
-        }
-
-        #AboutMeSec {
-            height: 1300px;
-            width: 91vw;
-            left: 10px;
-        }
-
-        .topic {
-            font-size: 16px;
-        }
-
-
-        hr.line {
-            top: 23px;
-            left: 64px;
-        }
-
-
-        #myImageABM {
-            top: 165px;
-            left: 40px;
-        }
-
-        #AboutMeSec > div > button {
-
-            bottom: 681px;
-            left: 71px;
-            width: 170px;
-            height: 46px;
-
-        }
-
-        #AboutMeSec > #AboutMeText {
-            font-size: 15px;
-            right: 19px;
-            width: 350px;
-            top: 604px;
-            height: 890px;
-        }
-
-        #AboutMeText > h4 {
-            font-size: 35px;
-        }
-
-        #AboutMeSec > #AboutMeText > p {
-            font-size: 15px;
-        }
-
-
-        #AboutMeText > #listRight {
-            color: #15F770;
-            width: 350px;
-            height: 323px;
-            position: absolute;
-            right: 0px;
-            bottom: 115px;
-
-        }
-
-    }
-
-
-
-*/
-
-
-
 
 
