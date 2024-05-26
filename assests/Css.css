@@ -121,12 +121,13 @@ body::before {
     display: flex;
     width:93vw;
     height:140vh;
-    background: var(--second-bg-color);
+    background: rgba(0, 0, 0, 1.5);
     position:relative;
     top:84px;
     left:35px;
     bottom: 30px;
     border:2px solid black;
+    opacity: 80%;
 }
 
 .topic{

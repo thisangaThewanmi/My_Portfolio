@@ -1,8 +1,9 @@
 #Education{
-    width:95vw;
+    width:93vw;
     height:165vh;
-    background:var(--second-bg-color);
-    margin-top:170px;
+    background: rgba(0, 0, 0, 1.5);
+    opacity: 80%;
+    margin-top:116px;
     left: 32px;
     right: 10px;
     margin-left: 0px;
@@ -15,15 +16,7 @@
 
 }
 
-.topicEdu{
-    color: #15F770;
-    font-size: 30px;
-    position: relative;
-    /*justify-content: center;
-    text-align: center;
-    align-items: center;*/
-    margin-top: 60px;
-}
+
 
 .Text{
     /*background: #eb87fa;*/
@@ -31,7 +24,7 @@
     height:120vh;
     display:flex;
     margin-left: 60px;
-    margin-top:180px;
+    margin-top:110px;
 
 
 
@@ -41,7 +34,7 @@
     width:20vw;
     height:100vh;
     margin-right:22px;
-    border: 2px solid #464242;
+    /*border: 2px solid #464242;*/
     border-radius: 20px 0px 20px 0px;
 
 }
@@ -58,14 +51,12 @@
     width:20vw;
     height:100vh;
     margin-right:30px;
-    border: 2px solid #464242;
+   /* border: 2px solid #464242;*/
     border-radius: 20px 0px 20px 0px;
 
 }
 
 #primary{
-
-   /* background: #ff002f;*/
 
 
 }
@@ -108,16 +99,20 @@
 .year{
     width:20vw;
     height: 90px;
-    color: #464242;
-    margin-left: 48px;
+    color: rgba(97, 97, 100, 0.6);
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex;
+    /*margin-left: 48px;*/
     /*background: blue;*/
 }
 
 .year>h4{
     font-size: 60px;
     padding: 0;
-    margin: 0;
-    color:black;
+    color: rgba(70, 66, 66, 0.87);
+    margin: auto;
+    justify-content: center;
 }
 
 .info{
@@ -135,27 +130,26 @@
 .EduImage{
     width: 154px;
     height: 152px;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgb(7, 7, 7);
     border-radius: 200px;
     margin-left: 30px;
    /* border: 2px solid #15F770;*/
     /*
     box-shadow:  rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex;
 }
 
-/*.EduImage>img{/// parana eka
-    width: 476px;
-    height: fit-content;
-    margin-left: -103px;
-    margin-top: 30px;
-}*/
+
 
 .EduImage>img {
     width: 337px;
     height: 106px;
-    margin-left: -90px;
-    margin-top: 29px;
+   /* margin-left: -90px;
+    margin-top: 29px;*/
+
 
 }
 
@@ -183,8 +177,66 @@
 .info>p{
     margin-top: 50px;
     font-size: 19px;
+    text-align: center;
 }
 
+.circle{
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+    background:#15F770;
+    margin:auto;
+}
+
+
+@media  screen and (max-width: 1440px) {
+    .Text{
+        margin-top: 91px;
+    }
+
+    .info>h5{
+        font-size: 24px;
+    }
+
+    .info>p{
+        font-size: 18px;
+        margin-top:15px;
+    }
+
+}
+
+@media  screen and (max-width: 1240px) {
+    .Text{
+        margin-top: 91px;
+    }
+
+    .info>h5{
+        font-size: 21px;
+    }
+
+    .info>p{
+        font-size: 15px;
+        margin-top:12px;
+    }
+
+}
+
+
+@media  screen and (max-width: 1000px) {
+    .Text{
+        margin-top: 91px;
+    }
+
+    .info>h5{
+        font-size: 21px;
+    }
+
+    .info>p{
+        font-size: 15px;
+        margin-top:12px;
+    }
+
+}
 
 
 

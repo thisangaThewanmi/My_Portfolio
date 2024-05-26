@@ -1,9 +1,12 @@
+
+
 #mySevices{
-    width: 96vw;
+    width: 93vw;
     height: 120vh;
-    background: var(--second-bg-color);
+    background: rgba(0, 0, 0, 1.5);
+    opacity: 80%;
     margin-top: 30px;
-    margin-left: 24px;
+    margin-left: 35px;
     position: relative
 }
 
@@ -24,9 +27,8 @@
     height: 89vh;
     /*  background: deeppink;*/
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 110px;
+    position:absolute;
+    top: 260px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -35,15 +37,12 @@
 }
 
 .serviceCard{
-    width:350px;
-    height:500px;
+    width: 406px;
+    height: 500px;
     background: rgba(19, 18, 18, 0.79);
-    /*
-    box-shadow:  rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
-    */
-    border-radius:20px;
-    padding:27px;
-    margin-left:75px;
+    border-radius: 20px;
+    padding: 27px;
+    margin-right: 28px;
 }
 
 .serviceCard>h3{
@@ -51,12 +50,85 @@
     color: #15F770;
 }
 
+
 .serviceCard>p{
-    font-size: 15px;
+    font-size: 21px;
     margin-top:180px;
 }
 
 .serviceCard:hover{
    background: #15F770;
+    opacity:80%;
     color: white;
+}
+
+.serviceDiv1{
+    background: purple;
+    display: flex;
+    width:70%;
+    height: auto;
+}
+
+
+
+#serviceDiv2{
+    background: green;
+    display: flex;
+    width:30%;
+}
+
+.serviceCardSpecial{
+    width: 406px;
+    height: 500px;
+    background: rgba(19, 18, 18, 0.79);
+    border-radius: 20px;
+    padding: 27px;
+    margin-right: 28px;
+}
+
+
+
+@media screen and (max-width: 1240px){
+
+    .serviceCard>p{
+        font-size: 19px;
+    }
+
+    #mySevices>h2{
+        font-size: 61px;
+    }
+
+
+     #serviceText{
+       position:absolute;
+       top: 160px;
+     }
+
+     #serviceText{
+         flex-direction: column;
+     }
+
+     #serviceDiv2{
+         width: 100%;
+     }
+
+    .serviceDiv1{
+        width: 100%;
+        background: white;
+    }
+    .serviceCard{
+        width: 50%;
+        height: 50%;
+    }
+
+    .serviceCard:hover{
+        height: 100%;
+    }
+
+    .serviceCardSpecial{
+        width:100%;
+        height: 50%;
+        margin-top: 50px;
+    }
+
 }
