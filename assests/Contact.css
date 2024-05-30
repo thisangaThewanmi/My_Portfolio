@@ -1,11 +1,13 @@
 #contactMe{
-    width: 96vw;
+    width: 93vw;
     height: 100vh;
-    background: var(--second-bg-color);
-    /* margin: 0; */
-    margin-top: 59px;
-    left: 20px;
-    margin-left: 22px;
+    background: rgba(0, 0, 0, 1.5);
+    padding: 50px 0 0 0 ;
+    position: relative;
+    margin-top:45px;
+    left: 32px;
+    opacity: 80%;
+
 }
 
 #Contopic{
