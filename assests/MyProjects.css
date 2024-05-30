@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root{
+    --container: #7f7d7d2e;
+}
+
+#projects{
+    width:90vw;
+    height: auto;
+    margin: auto;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+                'section1 section1 section2'
+                'section3 section4 section2'
+                'section3 section4 section5';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.grid-item> .containers{
+    margin: auto;
+}
+
+
+.item1 {
+    grid-area: section1;
+    background-color:var(--container);
+}
+
+.item2 {
+    grid-area: section2;
+    background-color:var(--container);
+}
+
+.item3 {
+    grid-area: section3;
+    background-color:var(--container);
+}
+
+.item4 {
+    grid-area: section4;
+    background-color:var(--container);
+}
+
+.item5 {
+    grid-area: section5;
+    background-color: var(--container);
+}
+
+
+.containers {
+    text-align: center;
+    width:80%;
+    height: 80%;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.containers>h3{
+    color: #15F770;
+    font-size: 25px;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+#ProjectSec{
+    width:93vw;
+    margin-left:32px;
+    height: auto;
+    background: rgba(0, 0, 0, 1.5);
+    opacity: 80%;
+    margin-top: 30px;
+}
+
+
+.topic{
+    color: white;
+    left: 10px;
+    font-size: 18px;
+    padding: 40px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+                    'section1'
+                    'section2'
+                    'section3'
+                    'section4'
+                    'section5';
+    }
+}

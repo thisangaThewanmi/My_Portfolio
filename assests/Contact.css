@@ -30,6 +30,7 @@
     /* padding: 50px; */
     margin-left: 94px;
     color: white;
+    font-size: 13px;
 }
 
 
@@ -39,6 +40,9 @@
     height: 455px;
    /* border: 2px solid black;*/
     padding: 50px;
+    margin-top: -80px;
+    margin-left: 200px;
+    border-radius: 30px;
 }
 
 img{
@@ -51,24 +55,37 @@ img{
     height: 38px;
     border-radius: 20px;
     margin-bottom: 30px;
-    color: rgba(30, 30, 30, 0.88);
+    color: white;
     text-align: center;
+    background: #4642423d;
 }
 
 .textArea{
     width: 425px;
     height: 165px;
     border-radius: 23px;
-    color: rgba(30, 30, 30, 0.88);
+    color:white;
     text-align: center;
+    background: #4642423d;
 
 }
 
 #contactMe>#Contopic>#dataSec>h3{
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 
 #contactMe>#Contopic>#dataSec>h3>img{
     margin-right:30px;
+}
+
+@media screen and (max-width: 1240px){
+
+    #Contopic>#ContacttextFeilds{
+        margin-left: 35px;
+    }
+
+    #Contopic>#dataSec{
+        font-size: 12px;
+    }
 }
