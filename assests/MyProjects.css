@@ -35,6 +35,12 @@ body {
     margin: auto;
 }
 
+.grid-item:hover{
+    grid-gap: 40px;
+    padding:12px;
+    background: #4caf50;
+}
+
 
 .item1 {
     grid-area: section1;
