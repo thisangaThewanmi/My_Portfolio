@@ -20,6 +20,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +35,11 @@
 
         <nav class="navbar">
             <a href="#" class="active">Home</a>
-            <a href="#" >AboutMe</a>
+            <a href="#AboutMeSec" >AboutMe</a>
+            <a href="#Education" >Education</a>
             <a href="#" >Skills</a>
-            <a href="#" >Gallery</a>
+            <a href="#" >Projects</a>
+
             <a href="#" >Contact Me</a>
         </nav>
 
@@ -135,7 +140,7 @@
 
         <div id="leftText">
 
-            <div class="circle"></div>
+
 
             <div id="primary">
 
@@ -224,6 +229,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 </section>
 
@@ -302,7 +309,7 @@
     <h2>MY SERVICES</h2>
     <div id="serviceText">
 
-<div class="serviceDiv1">
+
 
     <div class="serviceCard" id="webDevelopment">
 
@@ -320,10 +327,10 @@
         <p>Are you ready to elevate your website's backend functionality for optimal performance and scalability? As an experienced backend developer, I specialize in architecting robust and efficient
             solutions to power your digital presence</p>
     </div>
-</div>
 
 
-        <div id="serviceDiv2">
+
+
 
         <div  id="serviceCardSpecial"  class="serviceCard" id="frontEnd">
 
@@ -334,7 +341,7 @@
         </div>
 
         </div>
-    </div>
+
 </div>
 
 </section>
@@ -364,7 +371,7 @@
                 </div>
                 <p>The Connect4Game is a game where It manages the flow of turns between players, ensures moves are valid, and announces a winner once someone connects four discs in a row. In short, it keeps
                     the game running smoothly from start to finish."</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="buttons">Learn More</button>
 
 
             </div>
@@ -377,7 +384,7 @@
                 </div>
                 <p>A Stock Management System  which efficiently tracks inventory levels, automates reordering, and monitors sales/purchases, optimizing processes to reduce stockouts and
                     boost turnover for businesses of all sizes</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="buttons">Learn More</button>
             </div>
 
         </div>
@@ -390,7 +397,7 @@
                 </div>
                 <p>A vibrant chat app where connections flourish, conversations sparkle, and sharing moments is a breeze. Seamlessly send images, engage in
                     group chats, and effortlessly connect with others near and far."</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="buttons">Learn More</button>
             </div>
         </div>
         <div class="grid-item item4">
@@ -402,7 +409,7 @@
                 </div>
                 <p>An online library management system where organizing resources is effortless, accessing knowledge is seamless, and collaboration among users is encouraged. Easily manage books, track borrowing history, and facilitate
                     interactions between library patrons and administrators</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="buttons">Learn More</button>
             </div>
         </div>
         <div class="grid-item item5">
@@ -414,7 +421,7 @@
                 </div>
                 <p>The Connect4Game is a game where It manages the flow of turns between players, ensures moves are valid, and announces a winner once someone connects four discs in a row. In short, it keeps
                     the game running smoothly from start to finish."</p>
-                <button type="button">Learn More</button>
+                <button type="button" class="buttons">Learn More</button>
             </div>
         </div>
     </div>
@@ -441,7 +448,7 @@
             <h3>Assignment1</h3>
             <img class="AssignmentImage"   src="assests/images/Assignment.jpg">
             <div class="overlay">
-                <button type="button">See More</button>
+                <a href="https://github.com/thisangaThewanmi/Claculator.git/index" button type="button">See More</a>
             </div>
         </div>
         <div class="grid-itemAss">
@@ -515,7 +522,14 @@
 <!----------------Contact Section-------------->
 <section id="contactMe">
 
-    <h4 class="topic">Conatact Me</h4>
+    <section class="topic">
+
+            <h3>Contact </h3>
+            <hr class="line">
+            <h2>Feel free to get in touch with me</h2>
+
+    </section>
+
     <div id="Contopic">
 
 
@@ -534,6 +548,7 @@
 
 
         <div id="ContacttextFeilds">
+            <div>
             <input class="textBox" id="name" type="text" placeholder="Enter your Name"><br>
 
             <input class="textBox" id="email" type="email" placeholder="Enter your Email" required><br>
@@ -542,7 +557,15 @@
 
             <textarea id="message" class="textArea" placeholder="Message"  rows="10" cols="80" required></textarea><br>
 
-            <button class="AboutMebuttons" type="submit"> Submit </button><br>
+            <button class="buttons" type="submit" onclick="submitForm()"> Submit </button><br>
+            </div>
+
+            <div class="social-media">
+                <a id="Icon" href="mailto:thisangat2005@gmail.com" target="_blank" class="fa fa-solid fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/thisanga-thewanmi-8a36172a4/" class="fa fa-brands fa-linkedin"></a>
+                <a href="https://www.instagram.com/_kavindya_16/" class="fa fa-brands fa-instagram"></a>
+                <a href="https://github.com/thisangaThewanmi" class="fa fa-brands fa-github"></a>
+            </div>
         </div>
     </div>
 
@@ -558,6 +581,7 @@
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="contactForm.js"></script>
 
 <script>
     AOS.init();

@@ -5,9 +5,9 @@
     height: 120vh;
     background: rgba(0, 0, 0, 1.5);
     opacity: 80%;
-    margin-top: 30px;
     margin-left: 35px;
-    position: relative
+    position: relative;
+    margin-top: 220px;
 }
 
 #mySevices>h2{

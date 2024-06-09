@@ -4,9 +4,9 @@
     background:var(--second-bg-color);
     position: relative;
     margin-left: 31px;
-    margin-top: 40px;
     justify-content: center;
     align-items: center;
+    margin-top: 220px;
 }
 
 
@@ -73,12 +73,10 @@ progress {
     border-radius:20px;
 }
 
-/* Styles for progress bars inside #skillText */
 #skillText progress {
     background-color: rgba(19, 18, 18, 0.58); /* Light gray background */
 }
 
-/* Styles for progress bars inside #skillTextRight */
 #skillTextRight progress {
     background-color: rgba(19, 18, 18, 0.58);/* Light gray background */
 }
@@ -88,12 +86,12 @@ progress {
     from { width: 0; }
 }
 
-/* Apply animation to progress bars */
+
 progress[value] {
     animation: progressAnimation 2s ease-out forwards;
 }
 
-/* Additional styles for progress bars */
+
 progress::-webkit-progress-value {
     background-color: #15F770; /* Green progress bar */
 }

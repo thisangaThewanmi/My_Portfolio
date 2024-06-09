@@ -6,8 +6,9 @@
     margin-top:116px;
     left: 32px;
     right: 10px;
-    margin-left: 0px;
+   margin: auto;
     position: relative;
+    margin-top: 220px;
     /* position: relative;
       justify-content: center;
       text-align: center;
@@ -53,6 +54,8 @@
     margin-right:30px;
    /* border: 2px solid #464242;*/
     border-radius: 20px 0px 20px 0px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -83,6 +86,9 @@
     height:100%;
    /* background: white;*/
     display: flex;
+    margin-left:-24px;
+    text-align: center;
+
 
 }
 
@@ -92,6 +98,9 @@
     height:100%;
    /* background: deeppink;*/
     display: flex;
+    margin-left:32px;
+    text-align: center;
+
 
 
 }
@@ -132,7 +141,8 @@
     height: 152px;
     background: rgb(7, 7, 7);
     border-radius: 200px;
-    margin-left: 30px;
+   /* margin-left: 30px;*/
+    margin: auto;
    /* border: 2px solid #15F770;*/
     /*
     box-shadow:  rgb(74, 169, 113) 0px 54px 55px, rgb(9, 239, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 6px, rgba(12, 12, 12, 0.79) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -149,7 +159,7 @@
     height: 106px;
    /* margin-left: -90px;
     margin-top: 29px;*/
-
+    margin:auto;
 
 }
 
@@ -157,22 +167,23 @@
 .EduImage>#ijseImg{
     width: 143px;
     height: fit-content;
-    margin-left: 10px;
-    margin-top: -5px;
+    /*margin-left: 10px;
+    margin-top: -5px;*/
+    margin:auto;
     border-radius: 200px;
 }
 
 .EduImage>#olImg{
     width: 241px;
     height: 121px;
-    margin-left: -46px;
-    margin-top: 5px;
+   margin:auto;
 }
 
 .info>h5{
     font-size: 28px;
     color: var(--main-colour);
     margin-top: 100px;
+
 }
 .info>p{
     margin-top: 50px;
@@ -236,6 +247,57 @@
         margin-top:12px;
     }
 
+}
+
+@media  screen and (max-width: 800px) {
+
+    #Education{
+        margin-left: -12px;
+        height: 200vh;
+    }
+    .Text{
+        flex-direction: column;
+    }
+
+    #leftText{
+        width:92%;
+        height:100%;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    #leftText>div{
+        width:34vw;
+        height:79vh;
+    }
+    .info{
+        width:33vw;
+        margin-top: 60px;
+        height:50%;
+    }
+
+    .info>h5{
+        margin-top: 50px;
+    }
+
+    #rightText{
+        width:92%;
+        height:100%;
+        margin-top: 20px;
+
+    }
+
+    #rightText>div{
+        width:34vw;
+        height:79vh;
+
+    }
+
+
+    .year>h4{
+        margin-left: 110px;
+    }
 }
 
 

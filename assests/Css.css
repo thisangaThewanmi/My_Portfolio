@@ -50,6 +50,11 @@ body {
     /*background: transparent;*/
 }
 
+.section{
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
 body::before {
     content: "";
     position: fixed;
