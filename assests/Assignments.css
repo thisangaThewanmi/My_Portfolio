@@ -148,4 +148,10 @@
        height: fit-content;
        margin:auto;
    }
+
+    #Assignments{
+        width:90vw;
+        margin-left: 14px;
+    }
 }
+

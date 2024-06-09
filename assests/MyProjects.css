@@ -127,3 +127,10 @@ body {
                     'section5';
     }
 }
+
+@media (max-width: 500px) {
+    #ProjectSec{
+        width: 90vw;
+        margin-left: 14px;
+    }
+}

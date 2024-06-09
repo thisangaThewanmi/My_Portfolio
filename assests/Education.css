@@ -262,8 +262,9 @@
     #leftText{
         width:92%;
         height:100%;
-        margin: auto;
         justify-content: space-between;
+        margin-left:-10px;
+
 
     }
 
@@ -285,6 +286,7 @@
         width:92%;
         height:100%;
         margin-top: 20px;
+        margin-left:-20px;
 
     }
 
@@ -298,6 +300,60 @@
     .year>h4{
         margin-left: 110px;
     }
+}
+
+@media  screen and (max-width: 500px){
+
+    #Education{
+        width: 90vw;
+        left: 27px;
+        height:300vh;
+    }
+
+    #leftText{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .info{
+        width:82vw;
+        margin-top: 15px;
+        height:40%;
+    }
+
+    #leftText>div{
+        width:75vw;
+        height:75vh;
+        margin-bottom: 40px;
+
+    }
+
+    .year>h4{
+        margin-left: 275px;
+    }
+    .info>h5{
+        margin-top: 25px;
+    }
+
+
+    #rightText>div{
+        width:81vw;
+        height:70vh;
+        margin-top: 40px;
+
+    }
+
+    #rightText{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
 }
 
 
