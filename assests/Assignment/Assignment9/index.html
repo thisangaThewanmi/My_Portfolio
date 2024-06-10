@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+        }
+
+        div {
+            height: 50px;
+            width: 150px;
+            border: 1px solid white;
+            margin-top: 400px;
+        }
+
+        .lightOn {
+            background-color: red;
+            box-shadow: 0px 0px 20px red;
+        }
+
+        .lightOn2 {
+            background-color: hotpink;
+            box-shadow: 0px 0px 20px red;
+        }
+
+        .lightOn3 {
+            background-color: rgb(222, 171, 218);
+            box-shadow: 0px 0px 20px red;
+        }
+
+        #start {
+            width: 100px;
+            height: 40px;
+            margin-left: 805px;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+        #end {
+            width: 100px;
+            height: 40px;
+            margin-top: 50px;
+            margin-left: 100px;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="light "></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</section>
+<button id="start">Start</button><button id="end">End</button>
+
+<audio src="assets/audio.mp3" id="audio" title="audio"></audio>
+<script src="assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+    var current_light = 0;
+    var max_lightCount = 6;
+    var move = "RIGHT"; //nm 1 gaane + , left nm 1 gaane -
+
+    function updateLight() {
+        $(".light").removeClass("lightOn"); //ekagita light on wenuthuwa ekin eka gaanata on wenwa
+        $(".light").removeClass("lightOn2");
+        $(".light").removeClass("lightOn3");
+
+        $(".light").eq(current_light).addClass("lightOn");
+
+        if (move === "RIGHT") {
+            if (current_light !==0) $(".light").eq(current_light - 1).addClass("lightOn2"); //if eka dmme naththn anthima ekedi aulk enwa
+            if (current_light !==0) $(".light").eq(current_light + 1).addClass("lightOn3");
+
+            ++current_light;
+            if (current_light > max_lightCount - 1) {
+                move = "LEFT";
+            }
+        } else {
+            $(".light").eq(current_light + 1).addClass("lightOn2");
+            $(".light").eq(current_light - 1).addClass("lightOn3");
+
+            --current_light;
+            if (current_light === 0) {
+                move = "RIGHT";
+            }
+        }
+    }
+
+    $("#start").on("click", () => {
+        myInterval = setInterval(updateLight, 50);
+        $("#audio")[0].play();
+    });
+    $("#end").on("click", () => {
+        clearInterval(myInterval);
+        $("#audio")[0].pause();
+    });
+</script>
+
+</body>
+</html>

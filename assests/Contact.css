@@ -7,7 +7,7 @@
     margin-top:45px;
     left: 32px;
     opacity: 80%;
-    margin-top: 220px;
+
 }
 
 #Contopic{
@@ -25,8 +25,8 @@
 
 #Contopic>#dataSec{
 
-    width: 586px;
-    height: 556px;
+    width: 50%;
+    height: fit-content;
     margin-left: 94px;
     color: white;
     font-size: 13px;
@@ -36,8 +36,8 @@
 
 #Contopic>#ContacttextFeilds{
     /* background: rgba(12, 12, 12, 0.79); */
-    width: 500px;
-    height: 455px;
+    width: 50%;
+    height: fit-content;
     /* border: 2px solid black; */
     margin-top: 4px;
     border-radius: 30px;
@@ -52,8 +52,8 @@ img{
 }
 
 .textBox{
-    width: 322px;
-    height: 38px;
+    width: 70%;
+    height: 10%;
     border-radius: 20px;
     margin-bottom: 30px;
     color: white;
@@ -62,8 +62,8 @@ img{
 }
 
 .textArea{
-    width: 425px;
-    height: 121px;
+    width: 85%;
+    height:35%;
     border-radius: 23px;
     color:white;
     text-align: center;
@@ -94,7 +94,7 @@ img{
 .social-media{
     display: flex;
     flex-direction: column;
-    margin-left:40px;
+    margin-left:30px;
 }
 
 .social-media>a {
@@ -118,11 +118,24 @@ img{
 
 @media screen and (max-width: 1240px){
 
-    #Contopic>#ContacttextFeilds{
+   /* #Contopic>#ContacttextFeilds{
         margin-left: 35px;
-    }
+    }*/
 
     #Contopic>#dataSec{
         font-size: 12px;
+        margin-left: 65px;
+    }
+}
+
+@media screen and (max-width: 1355px){
+    #Contopic>#ContacttextFeilds{
+        width:56%;
+    }
+}
+
+@media screen and (max-width: 1355px) {
+    #Contopic > #ContacttextFeilds {
+        width: 76%;
     }
 }

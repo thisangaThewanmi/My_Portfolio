@@ -1,0 +1,138 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A4-case06</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .sky{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-image: url("assests/sky.jpg");
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .road{
+            height: 200px;
+            width: 500%;
+            display: block;
+            background-image: url("assests/road.jpg");
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            animation-name: road;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            background-repeat: repeat-x;
+
+        }
+        .city{
+            height: 250px;
+            width: 500%;
+            background-image: url("assests/city.png");
+            position: absolute;
+            bottom: 200px;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 1;
+            animation-name: city;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+        .car{
+            width: 400px;
+            left: 50%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+        .car>img{
+            width: 100%;
+            animation-name: car;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .wheel{
+            left: 50%;
+            bottom: 185px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+        .wheel>img{
+            width: 72px;
+            height: 72px;
+            animation-name: wheel;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .back{
+            left: -165px;
+            position: absolute;
+        }
+        .front{
+            left: 80px;
+            position: absolute;
+        }
+
+        @keyframes road {
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+        @keyframes city {
+            100%{
+                transform: translateX(-1400px);
+            }
+        }
+        @keyframes car {
+            100%{
+                transform: translatey(-1px);
+            }
+        }
+        @keyframes wheel {
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sky">
+    <div class="road"></div>
+    <div class="city"></div>
+    <div class="car">
+        <img src="assests/car.png">
+    </div>
+    <div class="wheel">
+        <img src="assests/wheel.png" class="front">
+        <img src="assests/wheel.png" class="back">
+    </div>
+</div>
+
+</body>
+</html>

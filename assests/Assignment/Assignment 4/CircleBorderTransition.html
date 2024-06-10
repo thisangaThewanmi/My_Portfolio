@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case2</title>
+
+    <link rel="stylesheet"  href="assests/normalize.css">
+
+    <style>
+        body{
+            background: dodgerblue;
+        }
+        div{
+            position: absolute;
+            width:200px;
+            height:200px;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+
+            background: gray;
+
+            border-radius: 50%;
+
+        }
+
+        h3{
+            height: fit-content;
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right: 0;
+            margin:auto;
+
+            text-align: center;
+            color: white;
+        }
+
+        div::before{
+            content: "";
+            border: 10px solid white;
+            border-top-color: red;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <h3>RWAD</h3>
+  </div>
+</body>
+</html>
+
+<!--Important points -->
+
+<!--metana circles dekek hadala hariyanne na mkda ema kaloth hover transition eka apply karana amaruii e wenuwata apita
+::before pseudo element eken circl ekata udin tawa content ekak da ganna puluwn  ema dagena ekata api width height denna one na
+show karaganna border radius ekak da gatta nm athi ema dagena border top eka red colour karanna -->
+
+<!--iangata transition ekedi : hover eka danne div ekat pase
+
+div:hover::before
+
+div eka hover karanna habaii ita klin tiyena content eka mema enne -->

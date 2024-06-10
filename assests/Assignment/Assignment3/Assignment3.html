@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment03</title>
+  <style>
+
+      div{
+          position: relative;
+      }
+
+    section>div{
+      width:250px;
+        height: 250px;
+        border-radius:100%;
+
+        margin: 1000px  auto;
+
+    }
+
+    section>div:first-child{
+        background-color: purple;
+        color: white;
+
+    }
+
+    section>div:nth-child(2){
+        background-color: blue;
+        color: white;
+
+    }
+    section>div:last-child{
+        background-color: brown;
+        color: white;
+
+    }
+
+    section>div>h3{
+        position: absolute;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+
+
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+    }
+
+    main{
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    main>#innerCircle{
+       width: 250px;
+        height:250px;
+
+       border: 10px solid red;
+        border-radius: 100%;
+
+        position: fixed;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+
+    }
+
+
+      main>#outerCircle{
+          width: 270px;
+          height:270px;
+
+          border: 10px solid gray;
+          border-radius: 100%;
+
+          position: fixed;
+          top:0;
+          bottom:0;
+          right:0;
+          left:0;
+          margin:auto;
+
+      }
+
+
+  </style>
+</head>
+
+
+<body>
+
+<section>
+
+<div>
+    <h3>Hello</h3>
+</div>
+<div>
+    <h3>Welcome to</h3>
+</div>
+<div>
+    <h3>Institute of Software Engineering</h3>
+</div>
+</section>
+
+<main>
+    <div id="outerCircle"></div>
+    <div id="innerCircle"></div>
+</main>
+
+</body>
+</html>

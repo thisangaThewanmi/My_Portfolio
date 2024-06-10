@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case4</title>
+
+  <link rel="stylesheet"  href="assests/normalize.css"></head>
+
+<style>
+  div{
+    width:200px;
+    height:200px;
+    border: 10px solid dodgerblue;
+    border-radius: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: animation;
+      position: absolute;
+
+
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin: auto;
+      animation-duration: 3s;
+  }
+
+  @keyframes animation {  /*in here it increase the value from 10 to 400px while the opacity help it to dissapear bit by bit*/
+    from{
+      width:100px;
+      height:100px;
+    }
+    to{
+     height:400px;
+      width: 400px;
+      opacity:0;
+    }
+  }
+</style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

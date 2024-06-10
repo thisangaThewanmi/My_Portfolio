@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment02</title>
+
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+
+        header{
+            position:relative;
+            width:100vw;
+            height:50px;
+
+        }
+
+        header>img{
+            position:absolute;
+            top:0;
+            left:10px;/*left side eken ida tiyanna*/
+            bottom:0;
+            margin:auto;
+
+            /*me tika damme image eka madata ganna mekedi bottom 0 kale meke parent header ne ekota hearder eke madata tama hadanna oni nisa*/
+        }
+
+        header>nav{
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+/*nav  section right side ekata geniyanna*/
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+
+            /*block level tiyeene ew api inline level karanna ona kelinm enna
+           */
+        }
+
+        header>nav>ul {
+            padding: 0;
+            margin: 0;
+
+            /*right corner eke tiyena space eka ain karnna padding and margin :0 karanw ainspect eke balanna */
+        }
+
+        footer{
+            background: gray;
+            width:100vw;
+            height:50px;
+            position:absolute;
+            position:fixed;/*footer eke position eka change wenna bari nisa eka fix karanoo*/
+            bottom:0;
+            padding: 20px 0px;
+        }
+
+        footer>h3{
+            text-align: center;
+            color: white;
+
+        }
+
+        main{
+            position: relative;
+
+        }
+
+       main>aside {
+           background: purple;
+           color: white;
+           width: 150px;
+
+
+           position: absolute;
+
+           padding: 10px;
+           box-sizing: border-box;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+       }
+
+        main>aside>ul {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        main>section {
+            background-color: lightyellow;
+            width: calc(100vw - 150px); /*aside eke kalla arala tama width eka ganna ona ekai 150px adu kale*/
+            margin-left: 150px;
+        }
+
+        section>div{
+            position: relative;
+            height: 250px;
+
+            /*pictures 3 dana ona div eke height eka 250px*/
+
+        }
+
+        section>div>div {
+            /*me vedio eka ena squares wlata ena styles tika eke div ekat taama me assign krla tiyenne*/
+
+            width: calc(100%/3); /*tiyena width eka parts 3 kt bedla tiynne*/
+            height: 250px;
+            position: absolute;
+
+            background: url("assests/bird-flying.gif");
+            background-position: center;
+
+            border: 1px solid brown;
+            box-sizing: border-box;
+        }
+
+        section>div>div:first-child {}
+
+        section>div>div:nth-child(2) {/*madata gannawaaaa*/
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>div>div:nth-child(3) {
+            right: 0;
+        }
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <img src="assests/ijse.png" alt="ijse" title="ijse" width="130px">
+    <nav>
+        <ul type="none">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>ContactUs</li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+        <!--aside tagg
+
+        The <aside> tag defines some content aside from the content it is placed in.
+
+The aside content should be indirectly related to the surrounding content.
+
+Tip: The <aside> content is often placed as a sidebar in a document.
+
+Note: The <aside> element does not render as anything special in a browser. However, you can use CSS to style the <aside> element (see example below).
+
+
+-->
+<main>
+    <aside>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>ContactUs</li>
+        </ul>
+    </aside>
+
+    <section>
+        <div id="div1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto beatae consequatur fugit minima nemo nobis odit quisquam rem, unde! Atque corporis esse ipsam iste iusto omnis qui quis vitae!
+        </p>
+    </section>
+</main>
+
+<!-------Footer Section------------>
+
+<footer>
+    <h3> Developed by IJSE</h3>
+</footer>
+
+
+</body>
+</html>

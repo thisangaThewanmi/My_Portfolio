@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case1</title>
+</head>
+
+<style>
+    #container{
+        width:100vw;
+        height:80vh;
+       /* border:2px solid red;*/
+        display: flex;
+        margin-top:20px;
+    }
+
+    .main{
+        width: 250px;
+        height: 485px;
+      /*  border: 2px solid black;*/
+        margin-left: 20px;
+        margin-top: 30px;
+        background-image: url("assests/images/gif.gif");
+        background-repeat: no-repeat;
+    }
+
+    .house{
+        width: 387px;
+        height: 488px;
+        /*border: 2px solid green;*/
+        /* margin-right: 67px; */
+        margin-left: 32px;
+        margin-top: 30px;
+        background-image:url("assests/images/house.webp");
+        background-repeat: no-repeat;
+    }
+
+    div {
+        display: block;
+    }
+
+    .letter{
+        width: 80px;
+        height: 100px;
+       /* border: 2px solid green;*/
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 40px;
+        color: blue;
+    }
+
+   /* #test{
+        width:900px;
+        height:900px;
+        border:3px solid red;
+        background-image: url("assests/images/image_processing20201231-5217-1o23z1x.gif");
+
+    }*/
+
+    .button{
+        width: 133px;
+        height: 52px;
+        box-shadow: 0 0 20px blue;
+        text-align: center;
+        border-radius: 20px;
+        background: #5a5a96;
+        margin-top: 20px
+    }
+
+
+
+
+</style>
+
+<body>
+
+<div id="container">
+    <div class="main">
+        <div id="l1" class="letter"> <h4>A</h4> </div>
+    </div>
+
+    <div class="main">
+        <div id="l2"  class="letter"><h4>B</h4></div>
+    </div>
+
+    <div class="main">
+        <div id="l3"  class="letter"> <h4>C</h4> </div>
+    </div>
+
+    <div class="main">
+        <div  id="l4"  class="letter"> <h4>D</h4> </div>
+    </div>
+
+    <div class="main">
+        <div id="l5"  class="letter"> <h4>E</h4> </div>
+    </div>
+
+    <div class="main">
+        <div id="l6"  class="letter"> <h4>F</h4> </div>
+    </div>
+
+    <div>
+        <div class="house"></div>
+    </div>
+
+</div>
+
+<div>
+    <button id="start" class="button" type="button">Start</button>
+    <button  id="end"  class="button"  type="button">End</button>
+</div>
+
+
+
+<script src="assests/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+    var letters =["A","B","C","D","E","F"];
+
+    var myInterval;
+
+     function rearrangeLetters(){
+
+         var lastIndex =letters.pop();
+         letters.unshift(lastIndex);
+
+         $('#l1').text(letters[0]);
+         $('#l2').text(letters[1]);
+         $('#l3').text(letters[2]);
+         $('#l4').text(letters[3]);
+         $('#l5').text(letters[4]);
+         $('#l6').text(letters[5]);
+
+     }
+
+    $('#start').on('click', () =>{
+        myInterval=setInterval(rearrangeLetters,2000);
+        console.log("start triggerd");
+
+    });
+
+    $('#end').on('click', () =>{
+        clearInterval(myInterval);
+        console.log("end triggerd");
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

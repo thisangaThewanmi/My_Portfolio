@@ -70,14 +70,29 @@
     top: 0;
 }
 
+.overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Optional: adds space between the buttons */
+}
+
 .overlay button {
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 16px;
     background-color: #15F770;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*.overlay button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #15F770;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}*/
 .AssignmentImage{
     width: 90%;
     height: fit-content;

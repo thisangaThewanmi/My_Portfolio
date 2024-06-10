@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASSIGNMENT 01-Positioning -Relative</title>
+
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        .square{
+            width:50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        #s1{
+            background: red;
+            left:0;
+            top:0;
+        }
+
+        #s2{
+            background: green;
+            right:0;
+            top:0;
+        }
+
+        #s3{
+            background: orange;
+            left:0;
+            bottom:0;
+        }
+
+        #s4{
+            background: deeppink;
+            right:0;
+            bottom:0;
+        }
+
+       .square>div{
+            width:20vw;
+            aspect-ratio:1/1;
+            background:white;
+            position:absolute;
+           border-radius: 100%;
+
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+        }
+
+
+        .square>div>div{
+            width:10vw;
+            aspect-ratio:1/1;
+            background:red;
+            position:absolute;
+
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+        }
+
+        .mid-squire{
+            background: white;
+            width:20vw;
+            aspect-ratio:1/1;
+            position:absolute;
+
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+        }
+
+        .mid-squire>div{
+            background: red;
+            width:10vw;
+            aspect-ratio:1/1;
+            position:absolute;
+            border-radius: 100%;
+
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+        }
+
+
+        .corner{
+            background:white;
+            width:10vw;
+            aspect-ratio:1/1;
+            position:absolute;
+            border-radius: 100%;
+        }
+
+        #corner1 {
+            left: -5vw;
+            top: -5vw;
+        }
+        #corner2 {
+            right: -5vw;
+            top: -5vw;
+
+        }
+        #corner3 {
+            bottom: -5vw;
+            left: -5vw;
+        }
+
+        #corner4 {
+            right: -5vw;
+            bottom: -5vw;
+        }
+
+        #corner5 {
+            right: 0;
+            left: 0;
+            top: -5vw;
+            margin: auto;
+        }
+
+        #corner6 {
+            right: 0;
+            left: 0;
+            bottom: -5vw;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="square"  id="s1">
+   <div>
+       <div></div>
+   </div>
+</div>
+
+<div class="square"  id="s2">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="square"  id="s3">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="square"  id="s4">
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div class="mid-squire">
+    <div></div>
+</div>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+
+</body>
+
+
+<!--mulinma <div> 4k hada gannawa main colour section 4 ta ita passe ewa position karanawa
+
+next e div athule tawa div hadala eka div>div widihata catch krn ekata circles style eka danawa
+
+ita passe aye e div eka athulata div ekka dala ekata square  style ek adda karanw
+
+mekedi commom styles class ekakta dala hama div ekakma e class eken allan tinoo
+
+-->
+
+
+<!--Other parts-->
+
+<!--ita passe mada eka hadanna wenama div ekak gannawa e ran iwara wela ekatah athuke taw div ekak hadala style eka apply krnawa
+
+ita passe comer circles wlata wenama div ekak aran iwara wela ewata style daniooo-->
+
+
+
+<!-----------------<Main Points>---------------->
+<!--circle ekak hadanna  border radius 100% karanna-->
+<!--center karanna top.bottom left,right: 0 krla margin:auto karanna me margin auto eken karanne me hatara pattama eka samana  wnna adina eka-->
+<!--absolute position karanna nm parent clss eka aniwarenma positionning 4ren 1k assign wela tiyanna ona-->
+</html>
+

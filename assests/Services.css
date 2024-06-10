@@ -32,13 +32,14 @@
     bottom: 0;
     left: 83px;
     right: 0;
+    justify-content: space-between;
 
 
 }
 
 .serviceCard{
-    width: 406px;
-    height: 500px;
+    width: 33%;
+    height: fit-content;
     background: rgba(19, 18, 18, 0.79);
     border-radius: 20px;
     padding: 27px;
@@ -53,7 +54,7 @@
 
 .serviceCard>p{
     font-size: 19px;
-    margin-top:180px;
+   /* margin-top:180px;*/
 }
 
 .serviceCard:hover{
@@ -87,6 +88,19 @@
     margin-right: 28px;
 }
 
+.ServiceIcons{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.ServiceIcons> i{
+    font-size: 93px;
+}
+
 
 
 @media screen and (max-width: 1240px){
@@ -110,6 +124,7 @@
 
      #serviceText{
          flex-direction: column;
+         justify-content: space-between;
      }
 
      #serviceDiv2{
@@ -124,6 +139,13 @@
     #mySevices{
         height: 200vh;
 
+    }
+
+    .serviceCard{
+        width:95%;
+        margin-top: 30px;
+
+       align-items: center;
     }
 
 

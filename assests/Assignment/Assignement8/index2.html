@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment9</title>
+</head>
+
+<style>
+
+  *{
+    background: #1f1e1e;
+  }
+  #container{
+    width:50vw;
+    height:50vh;
+   /* border:2px solid red;*/
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    background: #1f1e1e;
+  }
+
+  .main{
+    width:50vw;
+    height:114px;
+
+  }
+
+  #col-1{
+    /*background: red;*/
+  }
+
+  #col-2{
+   /* background: blue;*/
+  }
+
+  #col-3{
+    /*background: black;*/
+
+  }
+
+  #col-1sub{
+    width:120px;
+    height: 65px;
+  /*  background: lightpink;*/
+    margin-top: 35px;
+    border-radius: 15px;
+  /*  align-items: flex-start;*/
+
+  }
+
+  #col-3sub {
+    width: 120px;
+    height: 65px;
+  /*  background: yellow;*/
+    border-radius: 15px;
+
+    align-items: flex-end; /* This will not have any effect unless this element's parent is a flex container */
+    margin-left: auto; /* This will align the element to the right */
+    margin-bottom: 34px;
+    margin-top: 10px;
+  }
+
+  #sub{
+    width: 40vw;
+    height: 55px;
+    /*background: pink;*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+
+  }
+
+ #col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-bottom: 5px solid white;
+   border-top: 5px solid white;
+
+  }
+
+ .subCon{
+   width: 200px;
+   height: 60px;
+   margin-right: 10px;
+   border-radius: 15px;
+ }
+ /*#sub1{
+   background: deeppink;
+ }
+
+  #sub2{
+    background: red;
+  }
+
+  #sub3{
+    background: green;
+  }
+
+  #sub4{
+    background: blue;
+  }*/
+
+  button{
+
+    width: 133px;
+    height: 52px;
+    box-shadow: 0 0 20px deeppink;
+    text-align: center;
+    border-radius: 20px;
+    background: #e0dada;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+
+  }
+
+  .deeppink{
+    background: deeppink;
+  }
+
+ .pink{
+   background: pink;
+
+  }
+
+ .red{
+   background: red;
+ }
+
+ .green{
+   background: green;
+ }
+
+ .blue{
+   background:blue;
+ }
+
+ .yellow{
+   background: yellow;
+ }
+
+</style>
+<body>
+
+<div id="container">
+  <div class="main" id="col-1">
+    <div id="col-1sub"></div>
+  </div>
+  <div class="main" id="col-2">
+    <div id="sub">
+      <div class="subCon" id="sub1"></div>
+      <div class="subCon" id="sub2"></div>
+      <div class="subCon" id="sub3"></div>
+      <div class="subCon" id="sub4"></div>
+    </div>
+  </div>
+  <div class="main"  id="col-3">
+    <div id="col-3sub"></div>
+  </div>
+</div>
+
+<div>
+  <button id="start" class="button" type="button">Start</button>
+  <button  id="end"  class="button"  type="button">End</button>
+</div>
+
+
+<script src="assests/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+  var classes=["pink","deeppink","red","green","blue","yellow"];
+
+  var myInterval;
+
+  function changeColours() {
+
+     var lastclass = classes.pop();
+    classes.unshift(lastclass);
+
+
+   /* $('#col-1sub').removeClass().addClass(classes[0]);
+    $('#sub1').removeClass().addClass(classes[1]);
+
+    $('#sub2').removeClass().addClass(classes[2]);
+    $('#sub3').removeClass().addClass(classes[3]);
+    $('#sub4').removeClass().addClass(classes[4]);
+    $('#col-3sub').removeClass().addClass(classes[5]);*/
+
+    $('#col-1sub').removeClass().addClass("col-1sub").addClass(classes[0]);
+    $('#sub1').removeClass().addClass("subCon").addClass(classes[1]);
+    $('#sub2').removeClass().addClass("subCon").addClass(classes[2]);
+    $('#sub3').removeClass().addClass("subCon").addClass(classes[3]);
+    $('#sub4').removeClass().addClass("subCon").addClass(classes[4]);
+    $('#col-3sub').removeClass().addClass("col-3sub").addClass(classes[5]);
+
+
+  }
+
+  $('#start').on('click', () =>{
+    myInterval=setInterval(changeColours,2000);
+    console.log("start triggerd");
+
+  });
+
+  $('#end').on('click', () =>{
+    clearInterval(myInterval);
+    console.log("end triggerd");
+
+  })
+
+  </script>
+
+</body>
+</html>
