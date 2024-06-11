@@ -1,12 +1,13 @@
 #contactMe{
     width: 93vw;
-    height: 100vh;
+    height: fit-content;
     background: rgba(0, 0, 0, 1.5);
-    padding: 15px 0 0 0 ;
+    padding-top: 15px;
     position: relative;
     margin-top:45px;
     left: 32px;
     opacity: 80%;
+    padding-bottom: 40px;
 
 }
 
@@ -43,6 +44,7 @@
     border-radius: 30px;
     margin-left: 60px;
     display: flex;
+    flex-direction: row;
 }
 
 img{
@@ -52,8 +54,8 @@ img{
 }
 
 .textBox{
-    width: 70%;
-    height: 10%;
+    width: 62%;
+    height: 40px;
     border-radius: 20px;
     margin-bottom: 30px;
     color: white;
@@ -62,8 +64,8 @@ img{
 }
 
 .textArea{
-    width: 85%;
-    height:35%;
+    width: 80%;
+    height:100px;
     border-radius: 23px;
     color:white;
     text-align: center;
@@ -94,7 +96,7 @@ img{
 .social-media{
     display: flex;
     flex-direction: column;
-    margin-left:30px;
+
 }
 
 .social-media>a {
@@ -114,6 +116,11 @@ img{
 
 .social-media>a:hover{
     background: #15F770;
+}
+
+#Feilds{
+    width:80%;
+    height: fit-content;
 }
 
 @media screen and (max-width: 1240px){
@@ -138,4 +145,56 @@ img{
     #Contopic > #ContacttextFeilds {
         width: 76%;
     }
+}
+
+@media screen and (max-width: 950px) {
+    #Contopic> #dataSec {
+        font-size: 10px;
+        margin-left: 39px;
+    }
+
+
+    #Contopic > #ContacttextFeilds {
+        width: 88%;
+    }
+
+    .textBox {
+        width: 60%;
+        height: 36px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #Contopic {
+        flex-direction: column;
+    }
+
+    #Contopic> #dataSec {
+        width:89%;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    #Contopic> #dataSec {
+
+        font-size: 10px;
+    }
+
+    #Feilds {
+        width: 83%;
+        height: fit-content;
+        margin-left: -31px;
+    }
+
+    #contactMe{
+        width: 90vw;
+        margin-left:-16px;
+    }
+
 }

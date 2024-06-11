@@ -3,74 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>My Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMfO/E7AEERB2zMJCSGgHYdU5e5evg4pGQbV7cs" crossorigin="anonymous">
     <style>
-        .card {
-            width: 40%;
-            height: fit-content;
-            border-radius: 4px;
-            background: #212121;
-            display: flex;
-            gap: 5px;
-            padding: .4em;
+        #mySevices{
+            width: 93vw;
+            height: 120vh;
+            background: rgba(0, 0, 0, 1.5);
+            opacity: 80%;
+            margin-left: 35px;
+            position: relative;
+            margin-top: 220px;
         }
 
-        .card p {
-            height: 100%;
-            flex: 1;
-            overflow: hidden;
-            cursor: pointer;
-            border-radius: 2px;
-            transition: all .5s;
-            background: #212121;
-            border: 1px solid #ff5a91;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card p:hover {
-            flex: 4;
-            width: fit-content;
-        }
-
-        .card p img {
-            min-width: 14em;
-            padding: .5em;
+        #mySevices>h2{
+            font-size: 74px;
             text-align: center;
-            /*transform: rotate(-90deg);*/
-            transition: all .5s;
-            text-transform: uppercase;
-            color: #ff568e;
-            letter-spacing: .1em;
+            font-style: italic;
+            color: white;
+            position: absolute;
+            top: 52px;
+            right: 0;
+            left: 0;
+            text-shadow: 0 0 25px var(--main-colour);
         }
 
-        .card p:hover span {
-            transform: rotate(0);
+        #serviceText{
+            width: 85vw;
+            height: 89vh;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 100px;
         }
 
+        .serviceCard{
+            width: 33%;
+            height: fit-content;
+            background: rgba(19, 18, 18, 0.79);
+            border-radius: 20px;
+            padding: 27px;
+            margin-right: 28px;
+        }
+
+        .serviceCard>h3{
+            font-size: 30px;
+            color: #15F770;
+        }
+
+        .serviceCard>p{
+            font-size: 19px;
+        }
+
+        .serviceCard:hover{
+            background: #15F770;
+            opacity: 80%;
+            color: white;
+        }
+
+        .serviceCard>h3:hover{
+            color: white;
+        }
+
+        .serviceDiv1{
+            background: purple;
+            display: flex;
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+
+        #serviceDiv2{
+            background: green;
+            display: flex;
+            width: 30%;
+        }
+
+        #serviceCardSpecial{
+            width: 406px;
+            height: 500px;
+            background: rgba(19, 18, 18, 0.79);
+            border-radius: 20px;
+            padding: 27px;
+            margin-right: 28px;
+        }
+
+        .ServiceIcons{
+            width: 50%;
+            height: fit-content;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .ServiceIcons> i{
+            font-size: 93px;
+        }
+
+        @media screen and (max-width: 1240px){
+            .serviceCard>p{
+                font-size: 19px;
+                margin-right: 86px;
+                margin-left: 39px;
+            }
+
+            #mySevices>h2{
+                font-size: 61px;
+            }
+
+            #serviceText{
+                position: absolute;
+                margin-left: 70px;
+                padding-top: 15px;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            #serviceDiv2{
+                width: 100%;
+            }
+
+            .serviceDiv1{
+                width: 100%;
+                background: white;
+            }
+
+            #mySevices{
+                height: 200vh;
+            }
+
+            .serviceCard{
+                width: 95%;
+                margin-top: 30px;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            .serviceCard>p {
+                font-size: 15px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .serviceCard {
+                width: 80%;
+            }
+
+            #serviceText {
+                width: 100vw;
+                height: auto;
+                top: 40%;
+                padding-top: 0;
+                margin-left: 0;
+                left: 50%;
+                transform: translate(-50%, -40%);
+            }
+
+            #mySevices {
+                height: auto;
+                margin-top: 120px;
+            }
+        }
     </style>
 </head>
 <body>
-<div id="skillImages">
-<div class="card">
-    <p><img src="assests/images/New.png"></p>
-    <p><img src="assests/images/javascript.png"></p>
-    <p><img src="assests/images/jquery.png"></p>
-    <p><img src="assests/images/java%20(1).png"></p>
-    <p><img src="assests/images/html.png"></p>
-    <p><img src="assests/images/New.png"></p>
+<div id="mySevices">
+    <h2>MY SERVICES</h2>
+    <div id="serviceText">
+        <div class="serviceCard" id="webDevelopment">
+            <h3> Web Development</h3>
+            <div class="ServiceIcons">
+                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
+            </div>
+            <p>Are you looking to make your website stand out in today's competitive digital landscape? As a seasoned web designer, I bring expertise in crafting visually captivating and user-friendly websites tailored to your unique brand and audience</p>
+        </div>
+        <div class="serviceCard" id="backEnd">
+            <h3> BackEnd Development</h3>
+            <div class="ServiceIcons">
+                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
+            </div>
+            <p>Are you ready to elevate your website's backend functionality for optimal performance and scalability? As an experienced backend developer, I specialize in architecting robust and efficient solutions to power your digital presence</p>
+        </div>
+        <div class="serviceCard" id="frontEnd">
+            <h3> FrontEnd Development</h3>
+            <div class="ServiceIcons">
+                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
+            </div>
+            <p>Ready to transform your website's frontend into a visually stunning and highly engaging digital masterpiece? As a skilled frontend developer, I'm dedicated to creating immersive user experiences that captivate your audience and drive results</p>
+        </div>
+    </div>
 </div>
-
-<div class="card">
-    <p><img src="assests/images/New.png"></p>
-    <p><img src="assests/images/javascript.png"></p>
-    <p><img src="assests/images/jquery.png"></p>
-    <p><img src="assests/images/java%20(1).png"></p>
-    <p><img src="assests/images/html.png"></p>
-    <p><img src="assests/images/New.png"></p>
-</div>
-</div>
-
 </body>
 </html>

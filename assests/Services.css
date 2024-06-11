@@ -2,14 +2,115 @@
 
 #mySevices{
     width: 93vw;
-    height: 120vh;
+    height: fit-content;
     background: rgba(0, 0, 0, 1.5);
     opacity: 80%;
     margin-left: 35px;
-    position: relative;
-    margin-top: 220px;
+    margin-top: 50px;
 }
 
+#serviceText {
+    width: 85vw;
+    height: fit-content;
+    /*background: deeppink;*/
+    margin: auto;
+    display: flex;
+    padding-top:40px;
+
+}
+
+.serviceCard{
+    width: 33%;
+    height: fit-content;
+    background: rgba(19, 18, 18, 0.79);
+    border-radius: 20px;
+    padding: 27px;
+    margin-right: 28px;
+}
+
+#mySevices>h2{
+    font-size: 74px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    /*position: absolute;
+    top: 52px;
+    right: 0;
+    left: 0;*/
+    text-shadow: 0 0 25px var(--main-colour);
+}
+
+.serviceCard>h3{
+    font-size: 30px;
+    color: #15F770;
+}
+
+.serviceCard>p{
+    font-size: 19px;
+    /*!* margin-top:180px;*!*/
+}
+
+.serviceCard:hover{
+    background: #15F770;
+    opacity:80%;
+
+    color: white;
+}
+
+.serviceCard>h3:hover{
+    color: white;
+}
+
+
+.ServiceIcons{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.ServiceIcons> i{
+    font-size: 93px;
+}
+
+
+@media screen and (max-width: 1240px) {
+
+    .serviceCard > p {
+        font-size: 15px;
+
+
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    #serviceText{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .serviceCard{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #mySevices>h2 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    #mySevices{
+        width: 90vw;
+        margin-left: 18px;
+    }
+}
+
+
+
+/*
 #mySevices>h2{
     font-size: 74px;
     text-align: center;
@@ -23,16 +124,28 @@
 }
 
 #serviceText{
-    width: 85vw;
+   !* width: 85vw;
     height: 89vh;
-    /*  background: deeppink;*/
+    !*  background: deeppink;*!
     display: flex;
     position:absolute;
     top: 260px;
     bottom: 0;
     left: 83px;
     right: 0;
-    justify-content: space-between;
+    justify-content: space-between;*!
+
+    width: 85vw;
+    height: 89vh;
+    !* background: deeppink; *!
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   !* margin: auto;*!
+    padding-top: 100px;
 
 
 }
@@ -54,7 +167,7 @@
 
 .serviceCard>p{
     font-size: 19px;
-   /* margin-top:180px;*/
+   !* margin-top:180px;*!
 }
 
 .serviceCard:hover{
@@ -124,7 +237,10 @@
 
      #serviceText{
        position:absolute;
-       top: 160px;
+         margin-left: 70px;
+         padding-top: 15px;
+
+
      }
 
      #serviceText{
@@ -155,3 +271,17 @@
 
 
 }
+
+@media screen and (max-width: 500px){
+    .serviceCard>p {
+        font-size: 15px;
+        margin-left:0;
+        margin-right: 0;
+    }
+
+    .serviceCard {
+        width: 80%;
+
+    }
+}
+*/
