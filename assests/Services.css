@@ -60,6 +60,11 @@
 .serviceCard:hover{
    background: #15F770;
     opacity:80%;
+
+    color: white;
+}
+
+.serviceCard>h3:hover{
     color: white;
 }
 

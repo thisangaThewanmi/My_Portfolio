@@ -1,6 +1,6 @@
 #Education{
     width:93vw;
-    height:165vh;
+    height:fit-content;
     background: rgba(0, 0, 0, 1.5);
     opacity: 80%;
     margin-top:116px;
@@ -22,7 +22,7 @@
 .Text{
     /*background: #eb87fa;*/
     width:86vw;
-    height:120vh;
+    height:fit-content;
     display:flex;
     margin-left: 60px;
     margin-top:110px;
@@ -253,7 +253,7 @@
 
     #Education{
         margin-left: -12px;
-        height: 200vh;
+       /* height: 200vh;*/
     }
     .Text{
         flex-direction: column;
@@ -307,7 +307,8 @@
     #Education{
         width: 90vw;
         left: 27px;
-        height:300vh;
+       /* height:300vh;*/
+
     }
 
     #leftText{

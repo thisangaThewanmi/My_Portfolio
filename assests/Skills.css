@@ -119,7 +119,7 @@ progress::-moz-progress-bar {
     /* justify-content: center; */
     align-items: center;
     /* text-align: center; */
-    margin-left: 314px;
+    /*margin-left: 314px;*/
     margin-top: 30px;
     border-radius: 20px;
 
@@ -132,6 +132,78 @@ progress::-moz-progress-bar {
    /* background: white; !* White background for better visibility *!*/
     padding: 20px; /* Add padding for spacing */
 }
+
+#SkillSection{
+    display: flex;
+}
+
+#skillImages{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.card {
+    width: 80%;
+    height: fit-content;
+    /* border-radius: 4px; */
+    /* background: #212121; */
+    display: flex;
+    gap: 5px;
+    padding: -3.6em;
+    margin: auto
+
+}
+
+.card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .5s;
+   /* background: #212121;*/
+    border: 3px solid #15f770;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p:hover {
+    flex: 4;
+    width: fit-content;
+}
+
+.card p img {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    /*transform: rotate(-90deg);*/
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #09ef6a;
+    letter-spacing: .1em;
+}
+
+.card p:hover span {
+    transform: rotate(0);
+}
+
+#skillTopic{
+    color: white;
+    left: 10px;
+    font-size: 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+#skillTopic> #upTopic{
+    text-shadow: 0 0 40px var(--main-colour);
+    color: #15F770;
+}
+
+
 
 
 
