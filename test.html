@@ -6,197 +6,72 @@
     <title>My Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMfO/E7AEERB2zMJCSGgHYdU5e5evg4pGQbV7cs" crossorigin="anonymous">
     <style>
-        #mySevices{
-            width: 93vw;
-            height: 120vh;
-            background: rgba(0, 0, 0, 1.5);
-            opacity: 80%;
-            margin-left: 35px;
-            position: relative;
-            margin-top: 220px;
-        }
 
-        #mySevices>h2{
-            font-size: 74px;
-            text-align: center;
-            font-style: italic;
-            color: white;
-            position: absolute;
-            top: 52px;
-            right: 0;
-            left: 0;
-            text-shadow: 0 0 25px var(--main-colour);
-        }
+        @media all and (max-width: 1500px) {
 
-        #serviceText{
-            width: 85vw;
-            height: 89vh;
-            display: flex;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding-top: 100px;
-        }
-
-        .serviceCard{
-            width: 33%;
-            height: fit-content;
-            background: rgba(19, 18, 18, 0.79);
-            border-radius: 20px;
-            padding: 27px;
-            margin-right: 28px;
-        }
-
-        .serviceCard>h3{
-            font-size: 30px;
-            color: #15F770;
-        }
-
-        .serviceCard>p{
-            font-size: 19px;
-        }
-
-        .serviceCard:hover{
-            background: #15F770;
-            opacity: 80%;
-            color: white;
-        }
-
-        .serviceCard>h3:hover{
-            color: white;
-        }
-
-        .serviceDiv1{
-            background: purple;
-            display: flex;
-            width: 70%;
-            height: auto;
-            margin: auto;
-        }
-
-        #serviceDiv2{
-            background: green;
-            display: flex;
-            width: 30%;
-        }
-
-        #serviceCardSpecial{
-            width: 406px;
-            height: 500px;
-            background: rgba(19, 18, 18, 0.79);
-            border-radius: 20px;
-            padding: 27px;
-            margin-right: 28px;
-        }
-
-        .ServiceIcons{
-            width: 50%;
-            height: fit-content;
-            margin: auto;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .ServiceIcons> i{
-            font-size: 93px;
-        }
-
-        @media screen and (max-width: 1240px){
-            .serviceCard>p{
-                font-size: 19px;
-                margin-right: 86px;
-                margin-left: 39px;
-            }
-
-            #mySevices>h2{
-                font-size: 61px;
-            }
-
-            #serviceText{
-                position: absolute;
-                margin-left: 70px;
-                padding-top: 15px;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            #serviceDiv2{
-                width: 100%;
-            }
-
-            .serviceDiv1{
-                width: 100%;
-                background: white;
-            }
-
-            #mySevices{
-                height: 200vh;
-            }
-
-            .serviceCard{
-                width: 95%;
-                margin-top: 30px;
-                align-items: center;
+            /* header section */
+            .nav {
+                width: 60%;
             }
         }
 
-        @media screen and (max-width: 500px){
-            .serviceCard>p {
-                font-size: 15px;
-                margin-left: 0;
-                margin-right: 0;
+
+            @media all and (max-width: 1060px) {
+
+                /* header section */
+                .nav {
+                    font-size: 20px;
+                    width: 70%;
+                }
             }
 
-            .serviceCard {
-                width: 80%;
+        @media all and (max-width: 830px) {
+
+            /* header section */
+            .logo {
+                width: 63px;
+                height: 30px;
             }
 
-            #serviceText {
-                width: 100vw;
-                height: auto;
-                top: 40%;
-                padding-top: 0;
-                margin-left: 0;
-                left: 50%;
-                transform: translate(-50%, -40%);
+            .nav {
+                visibility: hidden;
             }
 
-            #mySevices {
-                height: auto;
-                margin-top: 120px;
+            .dropdown {
+                visibility: visible;
             }
         }
     </style>
 </head>
 <body>
-<div id="mySevices">
-    <h2>MY SERVICES</h2>
-    <div id="serviceText">
-        <div class="serviceCard" id="webDevelopment">
-            <h3> Web Development</h3>
-            <div class="ServiceIcons">
-                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
-            </div>
-            <p>Are you looking to make your website stand out in today's competitive digital landscape? As a seasoned web designer, I bring expertise in crafting visually captivating and user-friendly websites tailored to your unique brand and audience</p>
+<!-- header -->
+<header>
+    <div class="header">
+        <div class="logo">
+            <!-- left side -->
+            <img src="images/index_page_images/header_images/senu%20logo.png" title="senu.lk" alt="senu logo" >
         </div>
-        <div class="serviceCard" id="backEnd">
-            <h3> BackEnd Development</h3>
-            <div class="ServiceIcons">
-                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
+        <!-- right side -->
+        <nav class="nav">
+            <a href="#" class="about">About</a>
+            <a href="#" class="skills">Skills</a>
+            <a href="#" class="projects">Projects</a>
+            <a href="#" class="education">Education</a>
+            <a href="#" class="contact">Contact</a>
+            <a href="#" class="gallery">Gallery</a>
+        </nav>
+        <div class="dropdown">
+            <button class="drop-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="#" class="about">About</a>
+                <a href="#" class="skills">Skills</a>
+                <a href="#" class="projects">Projects</a>
+                <a href="#" class="education">Education</a>
+                <a href="#" class="contact">Contact</a>
+                <a href="#" class="gallery">Gallery</a>
             </div>
-            <p>Are you ready to elevate your website's backend functionality for optimal performance and scalability? As an experienced backend developer, I specialize in architecting robust and efficient solutions to power your digital presence</p>
-        </div>
-        <div class="serviceCard" id="frontEnd">
-            <h3> FrontEnd Development</h3>
-            <div class="ServiceIcons">
-                <i class="fa-solid fa-code fa-bounce" style="color: #5ace5c;"></i>
-            </div>
-            <p>Ready to transform your website's frontend into a visually stunning and highly engaging digital masterpiece? As a skilled frontend developer, I'm dedicated to creating immersive user experiences that captivate your audience and drive results</p>
         </div>
     </div>
-</div>
+</header>
 </body>
 </html>

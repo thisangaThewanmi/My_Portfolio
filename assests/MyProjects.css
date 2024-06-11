@@ -6,12 +6,11 @@ body {
 :root{
     --container: #7f7d7d2e;
 }
-
 #projects{
     width:90vw;
     height: auto;
     margin: auto;
-    margin-top: 220px;
+
 }
 
 .grid-container {
@@ -132,5 +131,9 @@ body {
     #ProjectSec{
         width: 90vw;
         margin-left: 14px;
+    }
+
+    #projects{
+        margin-top: 25px;
     }
 }
