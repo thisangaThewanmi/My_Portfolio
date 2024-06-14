@@ -71,18 +71,17 @@ body::before {
 
 
 
-.header{
-    position: fixed;
+/*.header{
+    display: flex;
     top:0;
     left:0;
     width:100%;
     padding: 2rem 12% 2rem;
     background: rgba(0,0,0,0.82);
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
-}
+}*/
 
 .logo{
     font-size: 3rem;
@@ -116,14 +115,17 @@ body::before {
     border-bottom: 3px solid var(--main-colour);
 }
 
-#menu-icon{
-    font-size: 3.6rem;
-    color:var(--main-colour);
+.navbar> .checkbox{
     display: none;
 }
 
-.drop-btn{
-    visibility: hidden;
+.navbar> input{
+    display: none;
+}
+
+.navbar> .checkbox> i{
+    font-size: 2rem;
+    color: white;
 }
 
 #AboutMeSec{
@@ -284,13 +286,92 @@ footer{
 */
 
 
+/*================================================*/
+
+.header {
+    display: flex;
+    height: 60px;
+    background-color: #343434;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap:wrap;
+}
+
+.nav {
+    flex-wrap: wrap;
+    width: 50%;
+    height: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    right:0;
+}
+
+.nav a {
+    color: #ffffff;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.nav a:hover {
+    color: #E6B31E;
+}
+
+.drop-btn {
+    background-color: #343434;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 5px;
+    align-items: baseline;
+    visibility: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#E6B31E;
+}
 
 
 
 
 
 
-
+/*=====================================================================*/
 @media screen and (max-width: 1440px) {
     #myImageABM {
         width: 271px;
@@ -458,54 +539,70 @@ footer{
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
 
-    .navbar{
+    .navbar {
         visibility: hidden;
     }
 
 
-    .topic{
+    .topic {
         font-size: 16px;
     }
-    #myImageABM{
-        width:236px;
+
+    #myImageABM {
+        width: 236px;
     }
 
-    .button-container>button{
+    .button-container > button {
         font-size: 15px;
-        width:153px;
+        width: 153px;
         height: 38px;
         margin-left: 19px;
 
     }
 
-    #AboutMeText{
+    #AboutMeText {
         padding: 30px;
         font-size: 13px;
     }
 
-    #AboutMeText>h4{
+    #AboutMeText > h4 {
         font-size: 28px;
         margin-left: 0px;
     }
 
-    #lists{
+    #lists {
         flex-direction: column;
         margin-left: 25%;
     }
 
-    #listRight{
-        margin-left:0px;
+    #listRight {
+        margin-left: 0px;
 
     }
-    #AboutMeSec{
+
+    #AboutMeSec {
         width: 90vw;
-        left:14px;
+        left: 14px;
     }
-    .header{
-        padding:0px 12% 2rem;
+
+    .nav {
+        visibility: hidden;
     }
+
+    .dropdown {
+        visibility:visible;
+        }
 }
+    /*.header{
+        padding:0px 12% 2rem;
+    }*/
+
+/*===========================================*/
+
+
+
+
 
 

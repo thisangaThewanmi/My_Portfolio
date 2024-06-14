@@ -1,0 +1,15 @@
+.bodyPage1{
+    width: 100vw;
+    height: 100vh;
+    background: #15F770;
+
+}
+
+
+#homeSection> #myImage{
+    width: 50%;
+    height: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+}
