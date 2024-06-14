@@ -290,8 +290,8 @@ footer{
 
 .header {
     display: flex;
-    height: 60px;
-    background-color: #343434;
+    height: 75px;
+    background: rgba(0,0,0,0.82);
     position: fixed;
     top: 0;
     width: 100%;
@@ -306,22 +306,21 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     right:0;
 }
 
 .nav a {
     color: #ffffff;
-    font-family: "JetBrains Mono", monospace;
 }
 
 .nav a:hover {
-    color: #E6B31E;
+    color: #09ef6a;
 }
 
 .drop-btn {
-    background-color: #343434;
+    background-color: rgba(19, 18, 18, 0.79);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -342,7 +341,7 @@ footer{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #1f1e1e;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -350,7 +349,7 @@ footer{
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -363,7 +362,7 @@ footer{
 }
 
 .dropdown:hover .dropbtn {
-    background-color:#E6B31E;
+    background-color: #15f770;
 }
 
 
@@ -600,6 +599,8 @@ footer{
     }*/
 
 /*===========================================*/
+
+
 
 
 

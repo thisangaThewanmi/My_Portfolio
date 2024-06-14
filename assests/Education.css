@@ -313,6 +313,8 @@
     #leftText{
         flex-direction: column;
         justify-content: space-between;
+        margin-left: -26px;
+
     }
 
     .info{
@@ -346,6 +348,7 @@
     #rightText{
         flex-direction: column;
         justify-content: space-between;
+        margin-left: -26px;
     }
 
 
