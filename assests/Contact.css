@@ -96,13 +96,14 @@ img{
 .social-media{
     display: flex;
     flex-direction: column;
+    background-color: black;
 
 }
 
 .social-media>a {
     font-size: 2em; /* Increase font size for bigger icons */
     margin-bottom: 10px; /* Add some space between icons */
-    color: #15F770; /* Set icon color */
+    color: white; /* Set icon color */
     display: inline-flex; /* Ensure the circle border surrounds the icon */
     align-items: center; /* Center the icon vertically within the circle */
     justify-content: center; /* Center the icon horizontally within the circle */
@@ -111,7 +112,9 @@ img{
     border-radius: 50%; /* Make the circle */
     text-decoration: none; /* Remove underline */
     border: 3px solid #15F770;
-    box-shadow: rgb(21, 247, 112) 0px 5px 15px;;
+    box-shadow: rgb(21, 247, 112) 0px 5px 15px;
+    background-color: black;
+
 }
 
 .social-media>a:hover{

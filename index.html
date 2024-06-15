@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <meta charset="UTF-8">
@@ -137,9 +137,9 @@
             </div>
 
             <div class="button-container">
-                <button class="AboutMebuttons" type="button"> HireMe</button>
+                <button class="AboutMebuttons" type="button" onclick="document.getElementById('contactMe').scrollIntoView();"> HireMe</button>
 
-                <button class="AboutMebuttons" type="button"> Download CV</button>
+                <button class="AboutMebuttons" type="button" > Download CV</button>
             </div>
         </div>
 
@@ -465,11 +465,11 @@
                 <h3>Connect4 Game</h3>
 
                 <div class="image-container">
-                    <img src="assests/images/projects/chtApp.png" alt="Connect4 Game Image">
+                    <img src="assests/images/projects/conn4.jpeg" alt="Connect4 Game Image">
                 </div>
                 <p>The Connect4Game is a game where It manages the flow of turns between players, ensures moves are valid, and announces a winner once someone connects four discs in a row. In short, it keeps
                     the game running smoothly from start to finish."</p>
-                <button type="button" class="buttons">Learn More</button>
+                <button type="button" class="buttons" onclick="window.location.href='https://github.com/thisangaThewanmi/ChatRoom.git'">Learn More</button>
 
 
             </div>
@@ -478,11 +478,11 @@
             <div class="containers" id="contP2" >
                 <h3>Stock Mangement</h3>
                 <div class="image-container">
-                    <img src="assests/images/projects/chtApp.png" alt="Connect4 Game Image">
+                    <img src="assests/images/projects/stock%20Mange.webp" alt="Connect4 Game Image">
                 </div>
                 <p>A Stock Management System  which efficiently tracks inventory levels, automates reordering, and monitors sales/purchases, optimizing processes to reduce stockouts and
                     boost turnover for businesses of all sizes</p>
-                <button type="button" class="buttons">Learn More</button>
+                <button type="button" class="buttons" onclick="window.location.href='https://github.com/thisangaThewanmi/ImportMaster.git'">Learn More</button>
             </div>
 
         </div>
@@ -495,7 +495,8 @@
                 </div>
                 <p>A vibrant chat app where connections flourish, conversations sparkle, and sharing moments is a breeze. Seamlessly send images, engage in
                     group chats, and effortlessly connect with others near and far."</p>
-                <button type="button" class="buttons">Learn More</button>
+                <button type="button" class="buttons" onclick="window.location.href='https://github.com/thisangaThewanmi/ChatRoom.git'">Learn More</button>
+
             </div>
         </div>
         <div class="grid-item item4">
@@ -507,7 +508,8 @@
                 </div>
                 <p>An online library management system where organizing resources is effortless, accessing knowledge is seamless, and collaboration among users is encouraged. Easily manage books, track borrowing history, and facilitate
                     interactions between library patrons and administrators</p>
-                <button type="button" class="buttons">Learn More</button>
+                <button type="button" class="buttons" onclick="window.location.href='https://github.com/thisangaThewanmi/LiabrayMnagementSystem.git'">Learn More</button>
+
             </div>
         </div>
         <div class="grid-item item5">
@@ -515,11 +517,12 @@
             <div class="containers" id="contP5" >
                 <h3>Stock Management Layerd</h3>
                 <div class="image-container">
-                    <img src="assests/images/projects/chtApp.png" alt="Connect4 Game Image">
+                    <img src="assests/images/projects/stockMan2.webp" alt="Connect4 Game Image">
                 </div>
-                <p>The Connect4Game is a game where It manages the flow of turns between players, ensures moves are valid, and announces a winner once someone connects four discs in a row. In short, it keeps
-                    the game running smoothly from start to finish."</p>
-                <button type="button" class="buttons">Learn More</button>
+                <p>A Stock Management System  which efficiently tracks inventory levels, automates reordering, and monitors sales/purchases, optimizing processes to reduce stockouts and
+                    boost turnover for businesses of all sizes</p>
+                <button type="button" class="buttons" onclick="window.location.href='https://github.com/thisangaThewanmi/ImportMasterLayerd.git'">Learn More</button>
+
             </div>
         </div>
     </div>
@@ -706,7 +709,7 @@
         </div>
 
 
-        <div id="ContacttextFeilds">
+       <!-- <div id="ContacttextFeilds">
             <div id="Feilds">
             <input class="textBox" id="name" type="text" placeholder="Enter your Name"><br>
 
@@ -725,14 +728,102 @@
                     <a href="https://www.instagram.com/_kavindya_16/" class="fa fa-brands fa-instagram"></a>
                     <a href="https://github.com/thisangaThewanmi" class="fa fa-brands fa-github"></a>
                 </div>
-
-
-
-
         </div>
     </div>
+-->
 
 
+    <!--  <div id="ContacttextFeilds">
+          <div id="Feilds">
+
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+        &lt;!&ndash; Replace with your Access Key &ndash;&gt;
+        <input type="hidden" name="access_key" value="d572bde0-7cb7-43b9-a6ab-ec2e30c5303a">
+
+        <input class="textBox" id="name" type="text" placeholder="Enter your Name"><br>
+
+        <input class="textBox" id="email" type="email" placeholder="Enter your Email" required><br>
+
+        <input class="textBox" id="subject" type="text" placeholder="Subject"><br>
+
+        <textarea id="message" class="textArea" placeholder="Message"  rows="10" cols="80" required></textarea><br>
+
+        <button class="buttons" type="submit" onclick="submitForm()"> Submit </button><br>
+
+        </form>
+
+          </div>
+
+
+            <div class="social-media">
+                <a id="Icon" href="mailto:thisangat2005@gmail.com" target="_blank" class="fa fa-solid fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/thisanga-thewanmi-8a36172a4/" class="fa fa-brands fa-linkedin"></a>
+                <a href="https://www.instagram.com/_kavindya_16/" class="fa fa-brands fa-instagram"></a>
+                <a href="https://github.com/thisangaThewanmi" class="fa fa-brands fa-github"></a>
+            </div>
+
+
+            </div>
+
+    </div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="ContacttextFeilds">
+            <div id="Feilds">
+               <!-- <input class="textBox" id="name" type="text" placeholder="Enter your Name"><br>
+
+                <input class="textBox" id="email" type="email" placeholder="Enter your Email" required><br>
+
+                <input class="textBox" id="subject" type="text" placeholder="Subject"><br>
+
+                <textarea id="message" class="textArea" placeholder="Message"  rows="10" cols="80" required></textarea><br>
+
+                <button class="buttons" type="submit" onclick="submitForm()"> Submit </button><br>-->
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="d572bde0-7cb7-43b9-a6ab-ec2e30c5303a">
+
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input class="textBox" type="text" name="name"  placeholder="Enter your Name" required>
+                    <input class="textBox" type="email" name="email"  placeholder="Enter your Email" required>
+                    <input class="textBox" type="subject" name="Subject"   placeholder="Enter the subject" required >
+                    <textarea  id="message" class="textArea" name="message"  placeholder="Enter the message" required></textarea>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                    <button class="buttons" type="submit">Submit Form</button>
+
+                </form>
+
+            </div>
+            <div class="social-media">
+                <a id="Icon" href="mailto:thisangat2005@gmail.com" target="_blank" class="fa fa-solid fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/thisanga-thewanmi-8a36172a4/" class="fa fa-brands fa-linkedin"></a>
+                <a href="https://www.instagram.com/_kavindya_16/" class="fa fa-brands fa-instagram"></a>
+                <a href="https://github.com/thisangaThewanmi" class="fa fa-brands fa-github"></a>
+            </div>
+        </div>
+    </div>
 </section>
 
 </main>

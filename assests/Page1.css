@@ -1,3 +1,4 @@
+/*
 .bodyPage1{
     width: 100vw;
     height: 100vh;
@@ -25,8 +26,8 @@ body::before {
 }
 
 #homeSection> h1{
-   /* font-size: 72px;
-    color: #15F770;*/
+   !* font-size: 72px;
+    color: #15F770;*!
 
     color: #fff;
     line-height: 1;
@@ -61,28 +62,29 @@ body::before {
 
 }
 
-.social-media{
+!*.social-media{
     display: flex;
 
 }
 
 .social-media>a {
-    font-size: 2em; /* Increase font size for bigger icons */
-    margin-bottom: 10px; /* Add some space between icons */
-    color: rgba(255, 255, 255, 0.96); /* Set icon color */
-    display: inline-flex; /* Ensure the circle border surrounds the icon */
-    align-items: center; /* Center the icon vertically within the circle */
-    justify-content: center; /* Center the icon horizontally within the circle */
-    width: 50px; /* Set width of the circle */
-    height: 50px; /* Set height of the circle */
-    border-radius: 50%; /* Make the circle */
-    text-decoration: none; /* Remove underline */
-   /* border: 3px solid #15F770;*/
-   /* box-shadow: rgb(21, 247, 112) 0px 5px 15px;;*/
+    font-size: 2em; !* Increase font size for bigger icons *!
+    margin-bottom: 10px; !* Add some space between icons *!
+    color: rgba(255, 255, 255, 0.96); !* Set icon color *!
+    display: inline-flex; !* Ensure the circle border surrounds the icon *!
+    align-items: center; !* Center the icon vertically within the circle *!
+    justify-content: center; !* Center the icon horizontally within the circle *!
+    width: 50px; !* Set width of the circle *!
+    height: 50px; !* Set height of the circle *!
+    border-radius: 50%; !* Make the circle *!
+    text-decoration: none; !* Remove underline *!
+   !* border: 3px solid #15F770;*!
+   !* box-shadow: rgb(21, 247, 112) 0px 5px 15px;;*!
     background-color: rgba(255, 255, 255, 0.49);
 }
 
 .social-media>a:hover{
     background: #15F770;
-}
+}*!
 
+*/
