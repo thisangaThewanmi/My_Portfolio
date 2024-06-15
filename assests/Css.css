@@ -90,6 +90,8 @@ body::before {
     cursor:pointer;
     transition:0.3s ease;
     font-style: italic;
+    padding-left: 20px;
+    padding-top: 14px;
 }
 
 .logo:hover{
@@ -197,7 +199,9 @@ height: 50px;
 
 .AboutMebuttons:hover{
     color: #15F770;
-    background: #464242;
+    background: rgba(0, 0, 0, 0.51);
+    box-shadow: rgb(66, 140, 101) 0px 21px 20px, rgb(9, 218, 106) 0px -12px 30px, rgba(19, 18, 18, 0.79) 0px 4px 102px, rgba(12, 12, 12, 0.79) 0px -13px 0px, rgba(0, 0, 0, 0.09) 0px -15px 0px;
+
 }
 
 
@@ -317,6 +321,7 @@ footer{
 
 .nav a:hover {
     color: #09ef6a;
+    border-bottom: 3px solid #09ef6a;
 }
 
 .drop-btn {
@@ -355,7 +360,10 @@ footer{
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #15f770;
+    color: black;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -478,6 +486,15 @@ footer{
 
 }
 
+@media all and (max-width: 1060px) {
+
+    /* header section */
+    .nav {
+        font-size: 16px;
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 864px){
     #AboutMeSec{
         flex-direction: column;
@@ -538,62 +555,80 @@ footer{
 
 }
 
-@media screen and (max-width: 500px) {
+    @media all and (max-width: 830px) {
 
-    .navbar {
-        visibility: hidden;
-    }
-
-
-    .topic {
-        font-size: 16px;
-    }
-
-    #myImageABM {
-        width: 236px;
-    }
-
-    .button-container > button {
-        font-size: 15px;
-        width: 153px;
-        height: 38px;
-        margin-left: 19px;
-
-    }
-
-    #AboutMeText {
-        padding: 30px;
-        font-size: 13px;
-    }
-
-    #AboutMeText > h4 {
-        font-size: 28px;
-        margin-left: 0px;
-    }
-
-    #lists {
-        flex-direction: column;
-        margin-left: 25%;
-    }
-
-    #listRight {
-        margin-left: 0px;
-
-    }
-
-    #AboutMeSec {
-        width: 90vw;
-        left: 14px;
-    }
-
-    .nav {
-        visibility: hidden;
-    }
-
-    .dropdown {
-        visibility:visible;
+        /* header section */
+        .logo {
+            width: 63px;
+            height: 30px;
         }
-}
+
+        .nav {
+            visibility: hidden;
+        }
+
+        .dropdown {
+            visibility: visible;
+        }
+    }
+
+        @media screen and (max-width: 500px) {
+
+            .navbar {
+                visibility: hidden;
+            }
+
+            /*.logo{
+                padding-left: 20px;
+                padding-top: 14px;
+                font-size: 2.5rem;
+            }*/
+
+
+            .topic {
+                font-size: 16px;
+            }
+
+            #myImageABM {
+                width: 236px;
+            }
+
+            .button-container > button {
+                font-size: 15px;
+                width: 153px;
+                height: 38px;
+                margin-left: 19px;
+
+            }
+
+            #AboutMeText {
+                padding: 30px;
+                font-size: 13px;
+            }
+
+            #AboutMeText > h4 {
+                font-size: 28px;
+                margin-left: 0px;
+            }
+
+            #lists {
+                flex-direction: column;
+                margin-left: 25%;
+            }
+
+            #listRight {
+                margin-left: 0px;
+
+            }
+
+            #AboutMeSec {
+                width: 90vw;
+                left: 14px;
+            }
+
+
+        }
+
     /*.header{
         padding:0px 12% 2rem;
     }*/
